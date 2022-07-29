@@ -13,7 +13,7 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 p {
   line-height: 1.5;
@@ -254,7 +254,7 @@ header {
   }
 }
 .scroll__down {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 24px;
   position: relative;
   animation: scroll-down 1.25s ease infinite;
