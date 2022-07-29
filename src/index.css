@@ -9,8 +9,17 @@
 html {
   scroll-behavior: smooth;
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 p {
   line-height: 1.5;
+  font-size: 14px;
+  color: #171a20;
+  padding: 6px 24px 14px;
 }
 a {
   text-decoration: none;
@@ -24,4 +33,194 @@ li {
 img {
   height: 100%;
   width: 100%;
+}
+h1 {
+  font-size: 40px;
+  color: #171a20;
+}
+h2 {
+  color: #171a20;
+  letter-spacing: 5px;
+}
+/*
+
+NAVBAR
+
+*/
+
+nav {
+  height: 80px;
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+}
+.nav__container {
+  width: 100%;
+  max-width: 1900px;
+  padding: 0 24px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+.logo {
+  width: 160px;
+}
+
+.nav__link:hover {
+  background-color: rgba(0, 0, 0, 0.156);
+  border-radius: 20px;
+}
+.nav__link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 8px;
+  margin-right: 8px;
+  color: #171a20;
+  letter-spacing: 0.5px;
+  padding: 8px 8px;
+  transition: all 500ms ease;
+}
+/*
+
+LANDING
+
+*/
+#landing {
+  background-image: url(https://www.wsupercars.com/wallpapers-regular/BMW/2021-BMW-M5-Competition-013-2160.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  height: 100vh;
+}
+.header__container--upper {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.header__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.underline {
+  text-decoration: underline;
+}
+.header__para {
+  animation: fadeInAnimationSecond ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+.header__title {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInAnimationSecond {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.header__container--lower {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.order__selection {
+  display: flex;
+  gap: 25px;
+  padding: 32px 0;
+  margin: 0 auto;
+}
+
+.custom__order {
+  width: 246px;
+  height: 40px;
+  background-color: #171a20e4;
+
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInAnimationRight ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+.existing__inventory {
+  width: 246px;
+  height: 40px;
+  background-color: #f4f4f4a6;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInAnimationLeft ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+.order__selection--para {
+  color: #ffffff;
+  padding: 0;
+}
+.order {
+  color: #ffffff;
+}
+.existing {
+  color: #393c41;
+}
+@keyframes fadeInAnimationLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInAnimationRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
