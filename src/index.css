@@ -284,6 +284,10 @@ header {
 MEDIA QUERY 
 */
 @media (max-width: 1200px) {
+  .logo__link{
+    opacity: 0;
+    visibility: hidden;
+  }
   .header__container--lower{
     top: 30%;
   }
