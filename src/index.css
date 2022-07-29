@@ -54,6 +54,25 @@ nav {
   background-color: transparent;
   align-items: center;
 }
+.nav__container--upper{
+  height: 35px;
+  width: 100%;
+  background-color: #171a20;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mcert{
+  width: 36px;
+  height: 12.8px;
+
+}
+.mcert__para{
+  color: white;
+  padding: 0;
+  margin-left: 5px;
+  margin-right: 20px;
+}
 .nav__container {
   width: 100%;
   max-width: 1900px;
