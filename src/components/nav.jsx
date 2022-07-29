@@ -14,6 +14,8 @@ export default function Nav() {
         <p className="mcert__para">Certified Dealership</p>
       </div>
       <nav>
+        
+        
         <div className="nav__container">
           <Link className="logo__link" to="/">
             <img className="logo" src={logo} alt="" />
