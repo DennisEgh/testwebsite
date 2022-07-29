@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./nav";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Landing() {
   return (
@@ -31,6 +32,9 @@ export default function Landing() {
                 </p>
               </div>
             </Link>
+          </div>
+          <div className="scroll__down">
+          <FontAwesomeIcon icon="fa-solid fa-angle-down" className="angle--down" />
           </div>
         </div>
       </header>
