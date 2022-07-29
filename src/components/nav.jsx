@@ -14,8 +14,6 @@ export default function Nav() {
         <p className="mcert__para">Certified Dealership</p>
       </div>
       <nav>
-        
-        
         <div className="nav__container">
           <Link className="logo__link" to="/">
             <img className="logo" src={logo} alt="" />
@@ -41,7 +39,7 @@ export default function Nav() {
             </li>
             <li className="nav__list">
               <Link to="/" className="nav__link">
-                8 Series 
+                8 Series
               </Link>
             </li>
             <li className="nav__list">

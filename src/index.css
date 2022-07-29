@@ -10,9 +10,9 @@ html {
   scroll-behavior: smooth;
 }
 .App {
-  
   overflow: hidden;
 }
+
 p {
   line-height: 1.5;
   font-size: 14px;
@@ -52,6 +52,7 @@ nav {
   background-color: transparent;
   align-items: center;
   position: fixed;
+  margin-top: 35px;
 }
 .nav__container--upper {
   height: 35px;
@@ -60,6 +61,8 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
 .mcert {
   width: 36px;
@@ -117,7 +120,10 @@ LANDING
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  
 }
+
 header {
   height: 100vh;
 }
@@ -129,7 +135,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 80px;
+  position: relative;
+  top: 12.5%;
+  z-index: 200;
 }
 .header__description {
   display: flex;
@@ -182,7 +190,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 56%;
+  top: 68%;
   align-items: center;
 }
 .order__selection {
@@ -279,17 +287,28 @@ header {
 }
 
 /*
+SECOND CAR 
+*/
+#second__car {
+  background-image: url(https://www.wsupercars.com/wallpapers-regular/BMW/2020-BMW-X6-M-Competition-001-1080.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/*
 MEDIA QUERY 
 */
 @media (max-width: 1200px) {
-  .logo__link{
+  .logo__link {
     opacity: 0;
     visibility: hidden;
   }
-  .header__container--lower{
-    top: 30%;
+  .header__container--lower {
+    top: 42.5%;
   }
-  .logo__motto{
+  .logo__motto {
     display: none;
   }
   .middle {
