@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png"
 
 export default function Nav() {
   return (
     <nav>
       <div className="nav__container">
-        <Link to="/">
-          <h2>ROADMEN</h2>
+        <Link className="logo__link" to="/">
+         <img className="logo" src={logo} alt="" />
+          <h4 className="logo__motto"><em>Sheer Driving Pleasure</em></h4>
         </Link>
-        <ul className="nav__links">
+        <ul className="nav__links middle">
           <li className="nav__list">
             <Link to="/" className="nav__link">
               M5

@@ -65,9 +65,17 @@ nav {
   position: fixed;
 }
 .logo {
-  width: 160px;
+  width: 60px; 
 }
-
+.logo__link{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
+.logo__motto{
+  color: #171a20;
+}
 .nav__link:hover {
   background-color: rgba(0, 0, 0, 0.156);
   border-radius: 20px;
@@ -90,7 +98,7 @@ LANDING
 */
 #landing {
   background-image: url(https://www.wsupercars.com/wallpapers-regular/BMW/2021-BMW-M5-Competition-013-2160.jpg);
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -153,15 +161,16 @@ header {
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
-  height: 650px;
+  height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  position: relative;
+  top: 56%;
 }
 .order__selection {
   display: flex;
   gap: 25px;
-  padding: 32px 0;
+  
   margin: 0 auto;
 }
 
@@ -222,5 +231,51 @@ header {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+
+
+/*
+MEDIA QUERY 
+*/
+@media (max-width: 1200px){
+  .middle{
+    display: none;
+  }
+ 
+  .nav__list:first-child{
+    display: none;
+  }
+  .nav__list:nth-child(2){
+    display: none;
+  }
+  .nav__link{
+    background-color: rgba(0, 0, 0, 0.156);
+    border-radius: 20px;
+  }
+  .logo__link{
+    gap: 5px;
+  }
+  
+}
+@media (max-width: 600px){
+  .nav__container{
+    padding: 0 8px;
+  }
+  .order__selection{
+    flex-wrap: wrap;
+  justify-content: center;
+  }
+  .custom__order{
+    width: 90vw;
+  }
+  .existing__inventory{
+    width: 90vw;
+  }
+}
+@media (max-width: 425px){
+  .logo__motto{
+    font-size: 12px;
   }
 }
