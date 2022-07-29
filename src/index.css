@@ -122,7 +122,7 @@ LANDING
   background-size: cover;
 }
 header {
-  height: 75vh;
+  height: 100vh;
 }
 .header__container--upper {
   width: 100%;
@@ -184,7 +184,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 35%;
+  top: 56%;
   align-items: center;
 }
 .order__selection {
@@ -254,10 +254,11 @@ header {
   }
 }
 .scroll__down{
-  margin-top: 1rem;
+  margin-top: 5rem;
   font-size: 24px;
   position: relative;
   animation: scroll-down 1.25s ease infinite;
+  
 }
 @keyframes scroll-down{
   0%{
@@ -302,7 +303,7 @@ MEDIA QUERY
   .logo__link{
     gap: 5px;
   }
-  
+ 
 }
 @media (max-width: 600px){
   .nav__container{
