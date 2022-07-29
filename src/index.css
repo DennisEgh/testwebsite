@@ -184,7 +184,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 56%;
+  top: 35%;
   align-items: center;
 }
 .order__selection {
@@ -254,7 +254,7 @@ header {
   }
 }
 .scroll__down{
-  margin-top: 5rem;
+  margin-top: 1rem;
   font-size: 24px;
   position: relative;
   animation: scroll-down 1.25s ease infinite;
