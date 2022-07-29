@@ -285,7 +285,7 @@ MEDIA QUERY
 */
 @media (max-width: 1200px) {
   .header__container--lower{
-    top: 40%;
+    top: 35%;
   }
   .logo__motto{
     display: none;
