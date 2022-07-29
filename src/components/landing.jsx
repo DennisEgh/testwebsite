@@ -21,14 +21,14 @@ export default function Landing() {
           <div className="order__selection">
             <Link to="">
               <div className="custom__order">
-                <p className="order__selection--para order">CUSTOM ORDER</p>
+                <p className="order__selection--para order">FACTORY NEW</p>
               </div>
             </Link>
 
             <Link to="">
               <div className="existing__inventory">
                 <p className="order__selection--para existing">
-                  EXISTING INVENTORY
+                  PRE-OWNED
                 </p>
               </div>
             </Link>
