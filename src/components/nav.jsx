@@ -34,12 +34,12 @@ export default function Nav() {
             </li>
             <li className="nav__list">
               <Link to="/" className="nav__link">
-                7 Series Sedan
+                7 Series
               </Link>
             </li>
             <li className="nav__list">
               <Link to="/" className="nav__link">
-                8 Series Gran Coupe
+                8 Series 
               </Link>
             </li>
             <li className="nav__list">
