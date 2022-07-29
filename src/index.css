@@ -254,7 +254,7 @@ header {
   }
 }
 .scroll__down {
-  margin-top: 5rem;
+  margin-top: 3rem;
   font-size: 24px;
   position: relative;
   animation: scroll-down 1.25s ease infinite;
@@ -285,7 +285,7 @@ MEDIA QUERY
 */
 @media (max-width: 1200px) {
   .header__container--lower{
-    top: 35%;
+    top: 30%;
   }
   .logo__motto{
     display: none;
