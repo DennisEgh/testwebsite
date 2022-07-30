@@ -5,9 +5,7 @@ export default function Thirdcar() {
   return (
     <section id="third__car">
       <header>
-     
-
-        <div className="header__container--upper">
+        <div data-aos="fade-up" className="header__container--upper">
           <div className="header__description">
             <h1 className="header__title">7 Series</h1>
             <p className="header__para">
@@ -16,9 +14,8 @@ export default function Thirdcar() {
             </p>
           </div>
         </div>
-       
 
-        <div className="header__container--lower">
+        <div data-aos="fade-up" className="header__container--lower">
           <div className="order__selection ">
             <Link to="">
               <div className="custom__order">
@@ -33,7 +30,6 @@ export default function Thirdcar() {
             </Link>
           </div>
         </div>
- 
       </header>
     </section>
   );
