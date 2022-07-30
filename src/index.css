@@ -334,10 +334,11 @@ SECOND CAR
 THIRD CAR 
 */
 #third__car {
-  background-image: url(https://www.wsupercars.com/wallpapers-regular/BMW/2023-BMW-7-Series-001-1080.jpg);
-  background-position: center;
+  background-image: url(https://www.wsupercars.com/wallpapers-regular/BMW/2023-BMW-7-Series-006-1080.jpg);
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 /* 
@@ -348,6 +349,7 @@ FOURTH CAR
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 /* 
 FIFTH CAR 
@@ -357,7 +359,11 @@ FIFTH CAR
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
+ 
 }
+
+
 /* 
 SIXTH CAR 
 */
@@ -443,6 +449,8 @@ MEDIA QUERY
     background: transparent;
   }
 
+
+
   .logo__link {
     opacity: 0;
     visibility: hidden;
@@ -456,7 +464,7 @@ MEDIA QUERY
   .middle {
     display: none;
   }
-
+  
   .nav__list:first-child {
     display: none;
   }
@@ -470,8 +478,16 @@ MEDIA QUERY
   .logo__link {
     gap: 5px;
   }
+
+}
+
+@media (max-width:750px){
+  #fifth__car{
+    background-position: -300px;
+  }
 }
 @media (max-width: 600px) {
+  
   .nav__container {
     padding: 0 8px;
   }
@@ -489,5 +505,10 @@ MEDIA QUERY
 @media (max-width: 425px) {
   .logo__motto {
     font-size: 12px;
+  }
+}
+@media (max-width: 510px){
+  #fifth__car{
+    background-position: -400px;
   }
 }
