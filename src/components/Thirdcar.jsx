@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Fade from "react-reveal/Fade";
 
 export default function Thirdcar() {
   return (
     <section id="third__car">
       <header>
-        <Fade bottom>
+     
 
         <div className="header__container--upper">
           <div className="header__description">
@@ -17,8 +16,7 @@ export default function Thirdcar() {
             </p>
           </div>
         </div>
-        </Fade>
-        <Fade bottom>
+       
 
         <div className="header__container--lower">
           <div className="order__selection ">
@@ -35,7 +33,7 @@ export default function Thirdcar() {
             </Link>
           </div>
         </div>
-        </Fade>
+ 
       </header>
     </section>
   );

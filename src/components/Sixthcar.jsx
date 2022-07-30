@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Fade from "react-reveal/Fade";
+
 
 export default function Sixthcar() {
   return (
     <section id="sixth__car">
       <header>
-        <Fade bottom>
+      
           <div className="header__container--upper">
             <div className="header__description ">
               <h1 className="header__title">X3</h1>
@@ -16,8 +16,7 @@ export default function Sixthcar() {
               </p>
             </div>
           </div>
-        </Fade>
-        <Fade bottom>
+    
           <div className="header__container--lower">
             <div className="order__selection">
               <Link to="">
@@ -33,7 +32,7 @@ export default function Sixthcar() {
               </Link>
             </div>
           </div>
-        </Fade>
+    
       </header>
     </section>
   );

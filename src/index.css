@@ -12,6 +12,10 @@ html {
 .App {
   overflow: hidden;
 }
+::-webkit-scrollbar{
+  width: 0px;
+}
+
 
 p {
   line-height: 1.5;
@@ -46,6 +50,21 @@ h2 {
 }
 .overflowhide {
   overflow: hidden !important ;
+}
+.reveal {
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+}
+
+.active {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 /*
 

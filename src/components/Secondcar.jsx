@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Fade from "react-reveal/Fade";
+
 
 export default function Secondcar() {
   return (
     <section id="second__car">
       <header>
-        <Fade bottom>
+      
+
           <div className="header__container--upper">
             <div className="header__description">
               <h1 className="header__title">X6</h1>
@@ -16,25 +17,24 @@ export default function Secondcar() {
               </p>
             </div>
           </div>
-        </Fade>
-            <Fade bottom>
-        <div className="header__container--lower">
+      
+       
+          <div className="header__container--lower">
+            <div className="order__selection">
+              <Link to="">
+                <div className="custom__order">
+                  <p className="order__selection--para order">FACTORY NEW</p>
+                </div>
+              </Link>
 
-          <div className="order__selection">
-            <Link to="">
-              <div className="custom__order">
-                <p className="order__selection--para order">FACTORY NEW</p>
-              </div>
-            </Link>
-
-            <Link to="">
-              <div className="existing__inventory">
-                <p className="order__selection--para existing">PRE-OWNED</p>
-              </div>
-            </Link>
+              <Link to="">
+                <div className="existing__inventory">
+                  <p className="order__selection--para existing">PRE-OWNED</p>
+                </div>
+              </Link>
+            </div>
           </div>
-        </div>
-            </Fade>
+       
       </header>
     </section>
   );
