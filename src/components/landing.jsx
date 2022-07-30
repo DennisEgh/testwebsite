@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Nav from "./nav";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

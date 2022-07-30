@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
 import invert from "../assets/logoinvert.png"
 
 export default function Nav() {
