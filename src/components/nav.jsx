@@ -51,7 +51,7 @@ export default function Nav() {
             </li>
             <li className="nav__list">
               <Link to="/" className={navbar ? "nav__link active" : "nav__link"}>
-                X4
+                IX
               </Link>
             </li>
             <li className="nav__list">

@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
-export default function Secondcar() {
+export default function Fifthcar() {
   const [title, setTitle] = useState(false);
 
   const changeTitle = () => {
-    window.scrollY >= 230 ? setTitle(true) : setTitle(false);
+    window.scrollY >= 3116 ? setTitle(true) : setTitle(false);
+    
   };
   window.addEventListener("scroll", changeTitle);
-
   return (
-    <section id="second__car">
+    <section id="fifth__car">
       <header>
         <div className="header__container--upper">
           <div
@@ -20,7 +20,7 @@ export default function Secondcar() {
                 : "header__description reveal"
             }
           >
-            <h1 className="header__title">X6</h1>
+            <h1 className="header__title">IX</h1>
             <p className="header__para">
               Order online for{" "}
               <span className="underline">Touchless Delivery</span>

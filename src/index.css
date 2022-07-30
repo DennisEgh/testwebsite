@@ -40,6 +40,18 @@ h2 {
   color: #171a20;
   letter-spacing: 5px;
 }
+
+.reveal{
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.reveal.active{
+opacity: 1;
+animation: fadeInAnimation ease 1s;
+animation-iteration-count: 1;
+
+}
 /*
 
 NAVBAR
@@ -308,6 +320,47 @@ SECOND CAR
   background-size: cover;
 
 }
+
+
+
+/* 
+THIRD CAR 
+*/
+#third__car{
+  background-image: url(https://www.wsupercars.com/wallpapers-regular/BMW/2023-BMW-7-Series-005-1080.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 
+FOURTH CAR 
+*/
+#fourth__car{
+  background-image: url(https://www.wsupercars.com/wallpapers-regular/BMW/2023-BMW-8-Series-008-1080.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 
+FIFTH CAR 
+*/
+#fifth__car{
+  background-image: url(https://www.wsupercars.com/wallpapers-regular/BMW/2022-BMW-iX-M60-001-1080.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 
+SIXTH CAR 
+*/
+#sixth__car{
+  background-image: url(https://www.wsupercars.com/wallpapers-regular/BMW/2020-BMW-X3-M-Competition-001-1080.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /*
 MEDIA QUERY 
