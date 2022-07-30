@@ -1,15 +1,31 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import invert from "../assets/logoinvert.png"
+import Menu from "./subcomponents/Menu";
 
 export default function Nav() {
   const [navbar, setNavbar] = useState(false);
+
 
   const changeNav = () => {
     window.scrollY >= 20 ? setNavbar(true) : setNavbar(false);
   };
 
   window.addEventListener("scroll", changeNav);
+
+const toggleModal = () =>{
+  let element = document.querySelector(".modal__container")
+  let transform = document.querySelector(".modal")
+  let xmark = document.querySelector(".fa-xmark")
+  let body = document.querySelector("body");
+
+  element.classList.toggle("active")
+  transform.classList.toggle("transform")
+  xmark.classList.toggle("transform")
+body.classList.toggle("overflowhide")
+
+
+}
   return (
     <>
       <div className="nav__container--upper">
@@ -73,7 +89,8 @@ export default function Nav() {
               </Link>
             </li>
             <li className="nav__list">
-              <Link to="/" className={navbar ? "nav__link active" : "nav__link"}>
+              <Menu />
+              <Link to="/" onClick={toggleModal} className={navbar ? "nav__link active" : "nav__link"}>
                 Menu
               </Link>
             </li>

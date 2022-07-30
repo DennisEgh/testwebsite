@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faAngleDown);
+library.add(faAngleDown, faXmark);
 
 function App() {
   return (
