@@ -1,25 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 
 export default function Thirdcar() {
-  const [title, setTitle] = useState(false);
-
-  const changeTitle = () => {
-    window.scrollY >= 1090 ? setTitle(true) : setTitle(false);
-    
-  };
-  window.addEventListener("scroll", changeTitle);
   return (
     <section id="third__car">
       <header>
+        <Fade bottom>
+
         <div className="header__container--upper">
-          <div
-            className={
-              title
-                ? "header__description reveal active"
-                : "header__description reveal"
-            }
-          >
+          <div className="header__description">
             <h1 className="header__title">7 Series</h1>
             <p className="header__para">
               Order online for{" "}
@@ -27,14 +17,11 @@ export default function Thirdcar() {
             </p>
           </div>
         </div>
+        </Fade>
+        <Fade bottom>
+
         <div className="header__container--lower">
-          <div
-            className={
-              title
-                ? "order__selection reveal active"
-                : "order__selection reveal"
-            }
-          >
+          <div className="order__selection ">
             <Link to="">
               <div className="custom__order">
                 <p className="order__selection--para order">FACTORY NEW</p>
@@ -48,6 +35,7 @@ export default function Thirdcar() {
             </Link>
           </div>
         </div>
+        </Fade>
       </header>
     </section>
   );

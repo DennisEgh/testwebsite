@@ -1,56 +1,40 @@
-import React, {useState} from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 
 export default function Fourthcar() {
-    const [title, setTitle] = useState(false);
-  
-
-
-    const changeTitle = () => {
-      window.scrollY >= 1950 ? setTitle(true) : setTitle(false);
-  
-    };
-    window.addEventListener("scroll", changeTitle);
   return (
     <section id="fourth__car">
-    <header>
-      <div className="header__container--upper">
-        <div
-          className={
-            title
-              ? "header__description reveal active"
-              : "header__description reveal"
-          }
-        >
-          <h1 className="header__title">8 Series</h1>
-          <p className="header__para">
-            Order online for{" "}
-            <span className="underline">Touchless Delivery</span>
-          </p>
-        </div>
-      </div>
-      <div className="header__container--lower">
-        <div
-          className={
-            title
-              ? "order__selection reveal active"
-              : "order__selection reveal"
-          }
-        >
-          <Link to="">
-            <div className="custom__order">
-              <p className="order__selection--para order">FACTORY NEW</p>
+      <header>
+        <Fade bottom>
+          <div className="header__container--upper">
+            <div className="header__description">
+              <h1 className="header__title">8 Series</h1>
+              <p className="header__para">
+                Order online for{" "}
+                <span className="underline">Touchless Delivery</span>
+              </p>
             </div>
-          </Link>
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="header__container--lower">
+            <div className="order__selection">
+              <Link to="">
+                <div className="custom__order">
+                  <p className="order__selection--para order">FACTORY NEW</p>
+                </div>
+              </Link>
 
-          <Link to="">
-            <div className="existing__inventory">
-              <p className="order__selection--para existing">PRE-OWNED</p>
+              <Link to="">
+                <div className="existing__inventory">
+                  <p className="order__selection--para existing">PRE-OWNED</p>
+                </div>
+              </Link>
             </div>
-          </Link>
-        </div>
-      </div>
-    </header>
-  </section>
-  )
+          </div>
+        </Fade>
+      </header>
+    </section>
+  );
 }
