@@ -53,6 +53,8 @@ nav {
   align-items: center;
   position: fixed;
   margin-top: 35px;
+  width: 100%;
+  z-index: 9999;
 }
 .nav__container--upper {
   height: 35px;
@@ -63,6 +65,7 @@ nav {
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 9999;
 }
 .mcert {
   width: 36px;
@@ -76,14 +79,22 @@ nav {
 }
 .nav__container {
   width: 100%;
-  max-width: 1900px;
+  max-width: 100vw;
   padding: 0 24px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+ 
+  transition: all 300ms ease;
+  
 }
+.nav__container.active{
+  color: white;
+  background: #FFFFFF;
+
+}
+
 .logo {
   width: 60px;
 }
@@ -95,6 +106,7 @@ nav {
 .logo__motto {
   color: #171a20;
 }
+
 .nav__link:hover {
   background-color: rgba(0, 0, 0, 0.156);
   border-radius: 20px;
@@ -137,7 +149,7 @@ header {
   justify-content: space-around;
   position: relative;
   top: 12.5%;
-  z-index: 200;
+  z-index: 1;
 }
 .header__description {
   display: flex;
@@ -301,6 +313,10 @@ SECOND CAR
 MEDIA QUERY 
 */
 @media (max-width: 1200px) {
+  .nav__container.active{
+   background: transparent;
+  }
+ 
   .logo__link {
     opacity: 0;
     visibility: hidden;

@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Nav from "./nav";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Landing() {
+
+
   return (
     <section id="landing">
       <header>
@@ -27,14 +29,15 @@ export default function Landing() {
 
             <Link to="">
               <div className="existing__inventory">
-                <p className="order__selection--para existing">
-                  PRE-OWNED
-                </p>
+                <p className="order__selection--para existing">PRE-OWNED</p>
               </div>
             </Link>
           </div>
           <div className="scroll__down">
-          <FontAwesomeIcon icon="fa-solid fa-angle-down" className="angle--down" />
+            <FontAwesomeIcon
+              icon="fa-solid fa-angle-down"
+              className="angle--down"
+            />
           </div>
         </div>
       </header>
