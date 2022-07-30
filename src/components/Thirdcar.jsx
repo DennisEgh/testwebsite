@@ -5,7 +5,8 @@ export default function Thirdcar() {
   const [title, setTitle] = useState(false);
 
   const changeTitle = () => {
-    window.scrollY >= 1194 ? setTitle(true) : setTitle(false);
+    window.scrollY >= 1090 ? setTitle(true) : setTitle(false);
+    console.log(window.scrollY)
   };
   window.addEventListener("scroll", changeTitle);
   return (

@@ -7,7 +7,7 @@ export default function Fourthcar() {
 
 
     const changeTitle = () => {
-      window.scrollY >= 2151 ? setTitle(true) : setTitle(false);
+      window.scrollY >= 1950 ? setTitle(true) : setTitle(false);
   
     };
     window.addEventListener("scroll", changeTitle);

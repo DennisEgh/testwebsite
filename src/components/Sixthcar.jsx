@@ -5,7 +5,7 @@ export default function Sixthcar() {
   const [title, setTitle] = useState(false);
 
   const changeTitle = () => {
-    window.scrollY >= 4075 ? setTitle(true) : setTitle(false);
+    window.scrollY >= 3698 ? setTitle(true) : setTitle(false);
   };
   window.addEventListener("scroll", changeTitle);
   return (
