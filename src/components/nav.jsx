@@ -34,7 +34,7 @@ body.classList.toggle("overflowhide")
           src="https://pictures.dealer.com/b/bmwgroup/1858/508a3c2f38c3287198e5d9ec1b764650x.jpg"
           alt=""
         />
-        <p className="mcert__para">Certified Dealership</p>
+        <p className="mcert__para">Certified Center</p>
       </div>
       <nav>
         <div className={navbar ? "nav__container active" : "nav__container"}>
@@ -52,7 +52,7 @@ body.classList.toggle("overflowhide")
             </li>
             <li className="nav__list">
               <Link to="/" className={navbar ? "nav__link active" : "nav__link"}>
-                X6
+                3 Series
               </Link>
             </li>
             <li className="nav__list">
