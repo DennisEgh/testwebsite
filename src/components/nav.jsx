@@ -72,7 +72,7 @@ body.classList.toggle("overflowhide")
             </li>
             <li className="nav__list">
               <Link to="/" className={navbar ? "nav__link active" : "nav__link"}>
-                X3
+                I4
               </Link>
             </li>
           </ul>

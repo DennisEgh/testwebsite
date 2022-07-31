@@ -32,7 +32,7 @@ export default function Menu() {
             </li>
             <li className="modal__list">
               <Link to="" className="modal__link">
-                <p className="modal__para">X6</p>
+                <p className="modal__para">3 Series</p>
               </Link>
             </li>
             <li className="modal__list">
@@ -52,7 +52,7 @@ export default function Menu() {
             </li>
             <li className="modal__list">
               <Link to="" className="modal__link">
-                <p className="modal__para">X3</p>
+                <p className="modal__para">I4</p>
               </Link>
             </li>
             <li className="modal__list">
