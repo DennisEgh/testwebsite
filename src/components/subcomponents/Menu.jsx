@@ -77,7 +77,7 @@ export default function Menu() {
             </li>
             <li className="modal__list">
               <Link to="" className="modal__link">
-                <p className="modal__para">Insurance</p>
+                <p className="modal__para">Mechanic</p>
               </Link>
             </li>
           </ul>
