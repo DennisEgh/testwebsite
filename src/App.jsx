@@ -1,18 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { factorynew } from "./factorynew.js"
+import Newcarmarket from "./pages/Newcarmarket";
 
-import { faAngleDown, faXmark } from "@fortawesome/free-solid-svg-icons";
-
-library.add(faAngleDown, faXmark);
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route path="/" element={<Home factorynew={factorynew}/>}/>
+          <Route path="/Newcarmarket" element={<Newcarmarket factorynew={factorynew}/>} />
         </Routes>
       </div>
     </Router>

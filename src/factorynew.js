@@ -1,0 +1,92 @@
+
+export const factorynew = [
+    {
+        id: 1,
+        maker: "BMW",
+        title: "BMW M5 CS Deep Green Metallica",
+        fuel: "Petrol",
+        transmission: "Automatic",
+        mileage: 0,
+        model_year: 2022,
+        model: "BMW M5 CS",
+        type: "Sedan",
+        drivetrain: "Four-wheel drive",
+        horsepower: 635,
+        motorsize: 4395,
+        price: 200.000,
+        url: "https://media.discordapp.net/attachments/743211223826563081/1003398446427938826/id1new.jpg?width=697&height=523",
+    },
+    {
+        id: 2,
+        maker: "BMW",
+        title: "BMW M5 Competition 625HP",
+        fuel: "Petrol",
+        transmission: "Automatic",
+        mileage: 0,
+        model_year: 2021,
+        model: "BMW M5 COMPETITION",
+        type: "Sedan",
+        drivetrain: "Four-wheel drive",
+        horsepower: 626,
+        motorsize: 4395,
+        price: 130.000,
+        url: "https://i.blocketcdn.se/pictures/5954619862.webp?type=original",
+
+
+    },
+    {
+        id: 3,
+        maker: "BMW",
+        title: "BMW M5 (625HP) Competition LCI Steptronic Driver package",
+        fuel: "Petrol",
+        transmission: "Automatic",
+        mileage: 0,
+        model_year: 2021,
+        model: "BMW M5 COMPETITION",
+        type: "Sedan",
+        drivetrain: "Four-wheel drive",
+        horsepower: 626,
+        motorsize: 4395,
+        price: 126.000,
+        url: "https://images-ext-1.discordapp.net/external/q8yfLEHbm4dyFlvhlTk5aEpHwQ9qd96Bcwol9TtlVA8/%3Ftype%3Doriginal/https/i.blocketcdn.se/pictures/2623623179.webp?width=840&height=630",
+
+
+    },
+    {
+        id: 4,
+        maker: "BMW",
+        title: "BMW M5 Competition Package Laserlight B&W DAP",
+        fuel: "Petrol",
+        transmission: "Automatic",
+        mileage: 0,
+        model_year: 2021,
+        model: "BMW M5 COMPETITION",
+        type: "Sedan",
+        drivetrain: "Four-wheel drive",
+        horsepower: 626,
+        motorsize: 4395,
+        price: 126.000,
+        url: "https://images-ext-1.discordapp.net/external/qT6C4lzKVWwxuzyjBVAKBn0WLps57I32iBDOZPpPqO8/%3Ftype%3Doriginal/https/i.blocketcdn.se/pictures/9398425952.webp?width=945&height=630",
+
+
+    },
+    {
+        id: 5,
+        maker: "BMW",
+        title: "BMW M5 Competition",
+        fuel: "Petrol",
+        transmission: "Automatic",
+        mileage: 0,
+        model_year: 2020,
+        model: "BMW M5 COMPETITION",
+        type: "Sedan",
+        drivetrain: "Four-wheel drive",
+        horsepower: 626,
+        motorsize: 4395,
+        price: 104.000,
+        url: "https://images-ext-2.discordapp.net/external/WT6Ny2CY_Q5BM7lFxPsYc1SIsE8m9Qt8maWnbfS6iMs/%3Ftype%3Doriginal/https/i.blocketcdn.se/pictures/8596052395.webp?width=840&height=630",
+
+
+    },
+
+]

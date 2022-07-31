@@ -8,6 +8,7 @@ export default function Landing() {
 
   return (
     <section id="landing">
+      
       <header>
         <Nav />
         <div className="header__container--upper">
@@ -21,7 +22,7 @@ export default function Landing() {
         </div>
         <div className="header__container--lower">
           <div className="order__selection">
-            <Link to="">
+            <Link to="/Newcarmarket">
               <div className="custom__order">
                 <p className="order__selection--para order">FACTORY NEW</p>
               </div>

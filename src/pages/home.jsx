@@ -8,10 +8,17 @@ import Thirdcar from "../components/Thirdcar";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-export default function Home() {
+export default function Home({factorynew}) {
+
+
+
+
   useEffect(() => {
+
     Aos.init({ duration: 1000 });
   }, []);
+
+
   return (
     <>
       <Landing />
