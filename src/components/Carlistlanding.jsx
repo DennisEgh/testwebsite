@@ -28,7 +28,7 @@ const Carlistlanding = ({factorynew}) => {
 
             {factorynew
                .filter((factorynew) =>{
-                if(inputValue == ""){
+                if(inputValue === ""){
                     return factorynew
                 }else if (factorynew.title.toLowerCase().includes(inputValue.toLocaleLowerCase())){
                     return factorynew
