@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Nav from "../components/nav";
 import Carsnew from "./ui/Carsnew";
 
-const Carlistlanding = ({factorynew}) => {
+const Carlistlanding = ({ factorynew }) => {
   const [inputValue, setInputValue] = useState("");
 
   return (
@@ -22,23 +22,24 @@ const Carlistlanding = ({factorynew}) => {
                   value={inputValue}
                 />
               </form>
-             
             </div>
-           
 
             {factorynew
-               .filter((factorynew) =>{
-                if(inputValue === ""){
-                    return factorynew
-                }else if (factorynew.title.toLowerCase().includes(inputValue.toLocaleLowerCase())){
-                    return factorynew
+              .filter((factorynew) => {
+                if (inputValue === "") {
+                  return factorynew;
+                } else if (
+                  factorynew.title
+                    .toLowerCase()
+                    .includes(inputValue.toLocaleLowerCase())
+                ) {
+                  return factorynew;
                 }
                 return false;
-               })
+              })
               .map((factorynew) => (
-                  <Carsnew factorynew={factorynew} key={factorynew.id} />
-                  ))}
-                  
+                <Carsnew factorynew={factorynew} key={factorynew.id} />
+              ))}
           </div>
         </div>
       </div>
