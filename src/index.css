@@ -24,13 +24,11 @@ html {
   height: 100vh;
   background-color: gray;
 }
-.skeleton__card{
+.skeleton__card {
   width: 682px;
   height: 135px;
   background-color: gray;
-  
 }
-
 
 .row {
   margin: 0 auto;
@@ -153,7 +151,6 @@ nav {
 .nav__container.active {
   color: white;
   background: #ffffff;
-
 }
 
 .logo {
@@ -515,10 +512,10 @@ MENU
 NEWCARMARKET
 */
 #market .modal__backdrop,
-#market .modal{
+#market .modal {
   top: 0px;
 }
-#market .fa-xmark{
+#market .fa-xmark {
   top: 35px;
   right: 14px;
 }
@@ -531,23 +528,22 @@ NEWCARMARKET
   margin-top: 0;
 }
 #market .nav__link,
-#market .logo__motto{
+#market .logo__motto {
   color: white;
 }
 
-#market .nav__container:hover{
+#market .nav__container:hover {
   background-color: #ffffff;
 }
 #market .nav__container:hover .nav__link,
-#market .nav__container:hover .logo__motto{
+#market .nav__container:hover .logo__motto {
   color: #171a20;
 }
 
 #market .nav__link.active,
 #market .logo__motto.active {
-  color: #171a20
+  color: #171a20;
 }
-
 
 #market__body {
   display: flex;
@@ -560,25 +556,23 @@ NEWCARMARKET
   flex: 1 1;
 }
 .market__container {
-
   margin: 0 auto;
   padding: 24px 0;
   position: relative;
   top: 10rem;
 }
 
-#market .row{
+#market .row {
   display: flex;
   justify-content: center;
 }
 
-
-#search{
+#search {
   width: 400px;
   height: 45px;
 }
 
-.market__input{
+.market__input {
   width: 100%;
   height: 100%;
   border-radius: 22.5px;
@@ -588,23 +582,126 @@ NEWCARMARKET
   border: none;
   outline: 0;
 }
+.market__back {
+  width: 200px;
+  height: 100px;
+  background-color: rebeccapurple;
+}
+
+/*
+MARKET SPECIFIC 
+*/
+.market__specific {
+  height: 100vh !important;
+}
+.market__specific .market__container {
+  top: 3rem;
+}
+.market__specific--content {
+  height: 800px;
+  width: 100%;
+  max-width: 714px;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+}
 
 
+.content__wrapper {
+  width: 600px;
+  padding: 20px;
+}
+
+.market__specific--info {
+  margin-top: 16px;
+  line-height: 40px;
+}
+.market__specific--title {
+  font-size: 28px;
+  font-weight: normal;
+}
+.market__specific--price {
+  font-size: 22px;
+  font-weight: bold;
+}
+.market__specific--facts {
+  background-color: #f8f9fa;
+  width: 100%;
+  border-bottom: #171a20 1px solid;
+  border-top: #171a20 1px solid;
+  
+}
+.facts__title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.facts {
+  
+  width: 100%;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 16px;
+
+}
+
+
+.icon__container{
+  display: flex;
+}
+.icon{
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+  
+}
+.icon__para{
+  padding: 0;
+}
+
+.icon__para--container{
+  position: relative;
+  top: -9px;
+  
+}
+
+.datainfo{
+  font-weight: bold;
+}
+
+.contact{
+  text-align: end;
+  transition: all 300ms ease;
+  
+}
+.contact:hover{
+  cursor: not-allowed;
+text-decoration: underline;
+}
+
+.fa-x{
+  position: relative;
+  left: 100.5%;
+  font-size: 20px;
+
+  color: black;
+}
 /*
 CARD
 */
-.card__row{
+.card__row {
   max-width: 714px;
-width: 100%;
-margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
-.card__link{
- 
- max-width: 714px !important;
- height: 50px;
+.card__link {
+  max-width: 714px !important;
+  height: 50px;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   max-width: 714px;
@@ -616,51 +713,50 @@ margin: 0 auto;
   background-color: #ffffff;
   transition: all 300ms ease;
 }
-.card:hover{
+.card:hover {
   transform: scale(1.05);
 }
 
-.card__container{
+.card__container {
   width: 100%;
   max-width: 682px;
   height: 135px;
-  
+
   display: flex;
   background-color: #f8f9fa;
 }
 
-.card__figure{
+.card__figure {
   width: 209px;
   height: 135px;
-  
 }
 
-.card__title{
+.card__title {
   font-size: 17px;
   line-height: 20px;
   font-weight: normal;
   color: rgb(99, 1, 99);
 }
-.card__info{
+.card__info {
   margin-left: 15px;
 }
-.card__info--lists{
+.card__info--lists {
   margin-top: 4px;
   font-size: 15px;
 }
-.card__list{
+.card__list {
   color: rgb(105, 103, 102);
 }
-.card__list:not(:last-child):after{
+.card__list:not(:last-child):after {
   content: "·";
   display: inline-block;
   margin: 0px 0.25em;
 }
-.card__price{
+.card__price {
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
- margin-top: 50px;
+  margin-top: 50px;
 }
 /*
 MEDIA QUERY 
@@ -669,17 +765,15 @@ MEDIA QUERY
   .nav__container.active {
     background: transparent;
   }
-  #market .nav__container:hover{
+  #market .nav__container:hover {
     background-color: #171a20;
   }
 
- .last{
-  color: #ffffff !important;
- }
- 
+  .last {
+    color: #ffffff !important;
+  }
 
-  .navigation
-  .logo__link {
+  .navigation .logo__link {
     opacity: 0;
     visibility: hidden;
   }
@@ -700,13 +794,16 @@ MEDIA QUERY
     display: none;
   }
 
- 
   .nav__link {
     background-color: rgba(0, 0, 0, 0.156);
     border-radius: 20px;
   }
+}
 
-  
+@media (max-width: 625px){
+  .facts{
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
@@ -756,49 +853,52 @@ MEDIA QUERY
   .header__container--lower {
     top: 20.5%;
   }
-  .market__title{
+  .market__title {
     font-size: 32px;
   }
-  
 }
 
-@media (max-width: 714px){
-  .card{
+@media (max-width: 714px) {
+  .card {
     max-width: 582px;
     padding: 16px;
     height: 154px;
     width: 100%;
   }
- .card__container{
-  height: 90px;
- }
+  .card__container {
+    height: 90px;
+  }
 
-  .card__figure{
+  .card__figure {
     width: 135px;
     height: 90px;
   }
-  .card__price{
+  .card__price {
     margin-top: 10px;
   }
-  .card__title{
+  .card__title {
     font-size: 15px;
   }
-  .card__list{
+  .card__list {
     font-size: 12px;
   }
-  .card__price{
+  .card__price {
     font-size: 15px;
   }
-  .skeleton__card{
+  .skeleton__card {
     width: 100%;
     height: 100%;
   }
-
-  
 }
 
 @media (max-width: 425px) {
   .logo__motto {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 500px){
+  .facts{
+    grid-template-columns: repeat(2, 1fr);
   }
 }

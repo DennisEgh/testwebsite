@@ -5,9 +5,9 @@ import App from './App';
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-import { faAngleDown, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faXmark, faArrowLeft, faGasPump, faX } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faAngleDown, faXmark);
+library.add(faAngleDown, faXmark, faArrowLeft, faGasPump, faX);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
