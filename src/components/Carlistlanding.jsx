@@ -27,7 +27,13 @@ const Carlistlanding = ({factorynew}) => {
            
 
             {factorynew
-              
+               .filter((factorynew) =>{
+                if(inputValue == ""){
+                    return factorynew
+                }else if (factorynew.title.toLowerCase().includes(inputValue.toLocaleLowerCase())){
+                    return factorynew
+                }
+               })
               .map((factorynew) => (
                   <Carsnew factorynew={factorynew} key={factorynew.id} />
                   ))}
