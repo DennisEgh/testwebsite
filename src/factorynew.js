@@ -37,7 +37,7 @@ export const factorynew = [
     {
         id: 3,
         maker: "BMW",
-        title: "BMW M5 (625HP) Competition LCI Steptronic Driver package",
+        title: "BMW M5 (625HP) Competition",
         fuel: "Petrol",
         transmission: "Automatic",
         mileage: 0,
@@ -55,7 +55,7 @@ export const factorynew = [
     {
         id: 4,
         maker: "BMW",
-        title: "BMW M5 Competition Package Laserlight B&W DAP",
+        title: "BMW M5 Competition Package B&W",
         fuel: "Petrol",
         transmission: "Automatic",
         mileage: 0,
