@@ -3,8 +3,28 @@ import React, { useState } from "react";
 import Nav from "../components/nav";
 import Carsnew from "./ui/Carsnew";
 
-const Carlistlanding = ({ factorynew }) => {
+const Carlistlanding = ({ factorynew: initialfactorynew }) => {
   const [inputValue, setInputValue] = useState("");
+  const [factorynew, setFactorynew] = useState(initialfactorynew);
+
+  function filterCars(filter) {
+    if (filter === "2020") {
+      setFactorynew(
+        factorynew.slice().sort((a, b) => a.model_year - b.model_year)
+      );
+    }
+    if (filter === "2022") {
+      setFactorynew(
+        factorynew.slice().sort((a, b) => b.model_year - a.model_year)
+      );
+    }
+    if (filter === "HIGH_TO_LOW") {
+      setFactorynew(factorynew.slice().sort((a, b) => b.price - a.price));
+    }
+    if (filter === "LOW_TO_HIGH") {
+      setFactorynew(factorynew.slice().sort((a, b) => a.price - b.price));
+    }
+  }
 
   return (
     <div id="market">
@@ -22,6 +42,19 @@ const Carlistlanding = ({ factorynew }) => {
                   value={inputValue}
                 />
               </form>
+              <select
+                id="filter"
+                defaultValue="DEFAULT"
+                onChange={(event) => filterCars(event.target.value)}
+              >
+                <option value="DEFAULT" disabled>
+                  Sort
+                </option>
+                <option value="2022">Date, Latest</option>
+                <option value="2020">Date, Oldest</option>
+                <option value="HIGH_TO_LOW">Price, High to Low </option>
+                <option value="LOW_TO_HIGH">Price, Low to High </option>
+              </select>
             </div>
 
             {factorynew

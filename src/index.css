@@ -35,6 +35,7 @@ html {
   max-width: 1200px;
   padding: 0 24px;
   width: 100%;
+  gap: 40px;
 }
 
 p {
@@ -588,6 +589,20 @@ NEWCARMARKET
   background-color: rebeccapurple;
 }
 
+#filter {
+  background-color: #fff;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  color: #606266;
+  height: 40px;
+  line-height: 40px;
+  max-width: 200px;
+  outline: none;
+  padding: 0 16px;
+  width: 100%;
+  
+}
+
 /*
 MARKET SPECIFIC 
 */
@@ -688,6 +703,8 @@ text-decoration: underline;
 
   color: black;
 }
+
+
 /*
 CARD
 */
