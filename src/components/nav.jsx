@@ -80,11 +80,6 @@ body.classList.toggle("overflowhide")
           <ul className="nav__links">
             <li className="nav__list">
               <Link to="/" className={navbar ? "nav__link active" : "nav__link"}>
-                Shop
-              </Link>
-            </li>
-            <li className="nav__list">
-              <Link to="/" className={navbar ? "nav__link active" : "nav__link"}>
                 Account
               </Link>
             </li>

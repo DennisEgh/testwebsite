@@ -10,35 +10,15 @@ const Carsnew = ({ factorynew }) => {
     image.onload = () => {
       setTimeout(() => {
         setImg(image);
-      }, 3000);
+      }, 300);
     };
   });
 
- 
   return (
     <div className="card">
-      
       {img ? (
         <>
-          <img className="imgnew" src={factorynew.url} alt="" />
-          <h3 className="card__title">{factorynew.title}</h3>
-          <ul>
-            <li>
-                <p>Maker: {factorynew.maker}</p>
-                <p>Fuel: {factorynew.fuel}</p>
-                <p>Transmission: {factorynew.transmission}</p>
-                <p>Milage: {factorynew.mileage} miles</p>
-                <p>Model year: {factorynew.model_year}</p>
-                <p>Model: {factorynew.model}</p>
-                <p>Type: {factorynew.type}</p>
-                <p>Drive: {factorynew.drive}</p>
-                <p>Price: <Carprice price={factorynew.price} /></p>
-                <p>{factorynew.motorsize} cc</p>
-                <p>{factorynew.horsepower} HP</p>
-                
-             
-            </li>
-          </ul>
+        
         </>
       ) : (
         <>

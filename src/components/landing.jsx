@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "./nav";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -10,7 +9,7 @@ export default function Landing() {
     <section id="landing">
       
       <header>
-        <Nav />
+       
         <div className="header__container--upper">
           <div className="header__description">
             <h1 className="header__title">M5</h1>
