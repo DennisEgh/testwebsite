@@ -87,7 +87,7 @@ body.classList.toggle("overflowhide")
             </li>
             <li className="nav__list">
               <Menu />
-              <Link to="/" onClick={toggleModal} className={navbar ? "nav__link active" : "nav__link"}>
+              <Link to="" onClick={toggleModal} className={navbar ? "nav__link active last" : "nav__link last"}>
                 Menu
               </Link>
             </li>

@@ -514,6 +514,14 @@ MENU
 /*
 NEWCARMARKET
 */
+#market .modal__backdrop,
+#market .modal{
+  top: 0px;
+}
+#market .fa-xmark{
+  top: 35px;
+  right: 14px;
+}
 #market .navigation .nav__container--upper {
   display: none;
 }
@@ -661,12 +669,16 @@ MEDIA QUERY
   .nav__container.active {
     background: transparent;
   }
-
-  #market .nav__link.active:last-child{
-    color: #ffffff;
+  #market .nav__container:hover{
+    background-color: #171a20;
   }
 
-  .nav
+ .last{
+  color: #ffffff !important;
+ }
+ 
+
+  .navigation
   .logo__link {
     opacity: 0;
     visibility: hidden;
@@ -694,9 +706,7 @@ MEDIA QUERY
     border-radius: 20px;
   }
 
-  .logo__link {
-    gap: 5px;
-  }
+  
 }
 
 @media (max-width: 600px) {
