@@ -88,5 +88,114 @@ export const factorynew = [
 
 
     },
+    {
+        id: 6,
+        maker: "BMW",
+        title: "BMW M5 F90 xDrive",
+        fuel: "Petrol",
+        transmission: "Automatic",
+        mileage: 2975,
+        model_year: 2018,
+        model: "BMW M5",
+        type: "Sedan",
+        drivetrain: "Four-wheel",
+        horsepower: 600,
+        motorsize: 4395,
+        price: 94.500,
+        url: "https://images-ext-2.discordapp.net/external/lk_b__v5BVlAM-hzrzV6g57z98p3MSGlUNbCYRXNdHc/%3Ftype%3Doriginal/https/i.blocketcdn.se/pictures/0080282404.webp?width=945&height=630",
+
+
+    },
+    {
+        id: 7,
+        maker: "BMW",
+        title: "BMW M5 Competition Euro 6",
+        fuel: "Petrol",
+        transmission: "Automatic",
+        mileage: 5100,
+        model_year: 2019,
+        model: "BMW M5 COMPETITION",
+        type: "Sedan",
+        drivetrain: "Four-wheel",
+        horsepower: 626,
+        motorsize: 4395,
+        price: 89.000,
+        url: "https://images-ext-2.discordapp.net/external/jhdJOhlkdG83EurxDTR3a7GyqEeJ3yhkkn_X5G5oHqI/%3Ftype%3Doriginal/https/i.blocketcdn.se/pictures/7952283776.webp?width=840&height=630",
+
+
+    },
+    {
+        id: 8,
+        maker: "BMW",
+        title: "BMW M5 Competition",
+        fuel: "Petrol",
+        transmission: "Automatic",
+        mileage: 6925,
+        model_year: 2019,
+        model: "BMW M5 COMPETITION",
+        type: "Sedan",
+        drivetrain: "Four-wheel",
+        horsepower: 626,
+        motorsize: 4395,
+        price: 89.900,
+        url: "https://images-ext-2.discordapp.net/external/YWABisT0-cTiYzb4xoxenDRZJKoIqmZHWDtqv22avDQ/%3Ftype%3Doriginal/https/i.blocketcdn.se/pictures/9874683636.webp?width=945&height=630",
+
+
+    },
+    {
+        id: 9,
+        maker: "BMW",
+        title: "BMW M5 Competition",
+        fuel: "Petrol",
+        transmission: "Automatic",
+        mileage: 1700,
+        model_year: 2017,
+        model: "BMW M5 COMPETITION",
+        type: "Sedan",
+        drivetrain: "Four-wheel",
+        horsepower: 600,
+        motorsize: 4395,
+        price: 73.000,
+        url: "https://images-ext-2.discordapp.net/external/_Ogk56DPba5tWJLgDLNAKIo8L6FvV0Vd2LA8ixoVip0/%3Ftype%3Doriginal/https/i.blocketcdn.se/pictures/3171059701.webp?width=945&height=630",
+
+
+    },
+    {
+        id: 10,
+        maker: "BMW",
+        title: "BMW M5 Competition",
+        fuel: "Petrol",
+        transmission: "Automatic",
+        mileage: 4802,
+        model_year: 2016,
+        model: "BMW M5 COMPETITION",
+        type: "Sedan",
+        drivetrain: "Four-wheel",
+        horsepower: 600,
+        motorsize: 4395,
+        price: 69.900,
+        url: "https://images-ext-1.discordapp.net/external/u-Whg9VP3DiJ7TshZGVxCGHaHB7eIzq0wrWm9ybU7dI/%3Ftype%3Doriginal/https/i.blocketcdn.se/pictures/0416455385.webp?width=945&height=630",
+
+
+    },
+    {
+        id: 11,
+        maker: "BMW",
+        title: "BMW M3 xDrive Competition",
+        fuel: "Petrol",
+        transmission: "Automatic",
+        mileage: 0,
+        model_year: 2022,
+        model: "BMW M3 COMPETITION",
+        type: "Sedan",
+        drivetrain: "Four-wheel",
+        horsepower: 510,
+        motorsize: 2993,
+        price: 104.900,
+        url: "https://images-ext-2.discordapp.net/external/Ws_mWOIFmZB3LBPev4RFPnndhx8nFZuAnAx8gCQxdo0/%3Ftype%3Doriginal/https/i.blocketcdn.se/pictures/0584972381.webp?width=840&height=630",
+    },
+    
+
+
 
 ]

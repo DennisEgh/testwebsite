@@ -29,7 +29,7 @@ export default function Landing() {
               </div>
             </Link>
 
-            <Link to="">
+            <Link to="/Newcarmarket">
               <div className="existing__inventory">
                 <p className="order__selection--para existing">PRE-OWNED</p>
               </div>

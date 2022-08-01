@@ -48,13 +48,13 @@ body.classList.toggle("overflowhide")
           </Link>
           <ul className="nav__links middle">
             <li className="nav__list">
-              <Link to="/" className={navbar ? "nav__link active" : "nav__link"}>
+              <Link to="/Newcarmarket" className={navbar ? "nav__link active" : "nav__link"}>
                 M5
               </Link>
             </li>
             <li className="nav__list">
               <Link to="/" className={navbar ? "nav__link active" : "nav__link"}>
-                3 Series
+                M3
               </Link>
             </li>
             <li className="nav__list">
@@ -64,7 +64,7 @@ body.classList.toggle("overflowhide")
             </li>
             <li className="nav__list">
               <Link to="/" className={navbar ? "nav__link active" : "nav__link"}>
-                8 Series
+               M8
               </Link>
             </li>
             <li className="nav__list">

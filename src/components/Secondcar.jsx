@@ -7,7 +7,7 @@ export default function Secondcar() {
       <header>
         <div data-aos="fade-up" className="header__container--upper">
           <div className="header__description">
-            <h1 className="header__title">3 Series</h1>
+            <h1 className="header__title">M3</h1>
             <p className="header__para">
               Order online for{" "}
               <span className="underline">Touchless Delivery</span>

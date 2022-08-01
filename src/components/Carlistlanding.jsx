@@ -24,6 +24,9 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
     if (filter === "LOW_TO_HIGH") {
       setFactorynew(factorynew.slice().sort((a, b) => a.price - b.price));
     }
+    if (filter === "FACTORY_NEW") {
+      setFactorynew(factorynew.slice().sort((a, b) => a.mileage - b.mileage));
+    }
   }
 
   return (
@@ -54,6 +57,7 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
                 <option value="2020">Date, Oldest</option>
                 <option value="HIGH_TO_LOW">Price, High to Low </option>
                 <option value="LOW_TO_HIGH">Price, Low to High </option>
+                <option value="FACTORY_NEW">Mileage, Factory New </option>
               </select>
             </div>
 

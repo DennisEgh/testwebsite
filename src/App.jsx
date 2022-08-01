@@ -7,6 +7,7 @@ import Marketspecific from "./pages/Marketspecific";
 
 
 
+
 function App() {
   return (
     <Router>
@@ -16,10 +17,12 @@ function App() {
           <Route path="/" element={<Home factorynew={factorynew}/>}/>
           <Route path="/Newcarmarket" element={<Newcarmarket factorynew={factorynew}/>} />
           <Route path="/Newcarmarket/:id" element={<Marketspecific factorynew={factorynew} />}/>
+   
         </Routes>
       </div>
     </Router>
   );
 }
+
 
 export default App;
