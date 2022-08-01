@@ -27,13 +27,15 @@ body.classList.toggle("overflowhide")
 
 }
   return (
-    <>
+    
+    <div className="navigation">
+
       <div className="nav__container--upper">
         <img
           className="mcert"
           src="https://pictures.dealer.com/b/bmwgroup/1858/508a3c2f38c3287198e5d9ec1b764650x.jpg"
           alt=""
-        />
+          />
         <p className="mcert__para">Certified Center</p>
       </div>
       <nav>
@@ -92,6 +94,7 @@ body.classList.toggle("overflowhide")
           </ul>
         </div>
       </nav>
-    </>
+          </div>
+    
   );
 }

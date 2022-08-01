@@ -19,20 +19,24 @@ html {
   width: 0px;
 }
 
-
-.skeleton{
+.skeleton {
   width: 100vw;
   height: 100vh;
   background-color: gray;
 }
 
-.skeleton__img{
+.skeleton__img {
   width: 495px;
   height: 350px;
   background-color: gray;
- position: absolute;
- 
+  position: absolute;
+}
 
+.row {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 24px;
+  width: 100%;
 }
 
 p {
@@ -149,6 +153,7 @@ nav {
 .nav__container.active {
   color: white;
   background: #ffffff;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 5%);
 }
 
 .logo {
@@ -158,7 +163,6 @@ nav {
 .logo__link {
   display: flex;
   align-items: center;
-  
 }
 
 .logo__motto {
@@ -182,7 +186,7 @@ nav {
   transition: all 500ms ease;
 }
 
-.middle{
+.middle {
   position: relative;
   left: -55px;
 }
@@ -197,7 +201,6 @@ LANDING
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 header {
@@ -405,7 +408,6 @@ THIRD CAR
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 /* 
@@ -416,7 +418,6 @@ FOURTH CAR
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 /* 
@@ -427,10 +428,7 @@ FIFTH CAR
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-
 }
-
 
 /* 
 SIXTH CAR 
@@ -513,17 +511,34 @@ MENU
   font-weight: 500;
 }
 
-
-
-
 /*
 NEWCARMARKET
 */
-#market__body{
-
+#market .navigation .nav__container--upper {
+  display: none;
+}
+#market .navigation nav {
+  position: absolute;
+  background-color: transparent;
+  margin-top: 0;
 }
 
-
+#market__body {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(https://cdn.motor1.com/images/mgl/YpZkw/s1/bmw-m3-and-bmw-m4-teaser.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.market__main {
+  flex: 1 1;
+}
+.market__container {
+  padding: 24px 0;
+}
 
 /*
 MEDIA QUERY 
@@ -532,8 +547,6 @@ MEDIA QUERY
   .nav__container.active {
     background: transparent;
   }
-
-
 
   .logo__link {
     opacity: 0;
@@ -556,10 +569,7 @@ MEDIA QUERY
     display: none;
   }
 
-  .nav__list:nth-child(2) {
-    display: none;
-  }
-
+ 
   .nav__link {
     background-color: rgba(0, 0, 0, 0.156);
     border-radius: 20px;
@@ -568,13 +578,9 @@ MEDIA QUERY
   .logo__link {
     gap: 5px;
   }
-
 }
 
-
-
 @media (max-width: 600px) {
-
   .nav__container {
     padding: 0 8px;
   }
@@ -604,7 +610,6 @@ MEDIA QUERY
 
   #third__car {
     background-image: url(https://www.wsupercars.com/wallpapers-phone/BMW/2023-BMW-7-Series-001-2400p.jpg);
-
   }
 
   #fourth__car {
