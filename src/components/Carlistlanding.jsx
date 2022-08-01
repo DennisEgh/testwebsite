@@ -33,6 +33,7 @@ const Carlistlanding = ({factorynew}) => {
                 }else if (factorynew.title.toLowerCase().includes(inputValue.toLocaleLowerCase())){
                     return factorynew
                 }
+                return false;
                })
               .map((factorynew) => (
                   <Carsnew factorynew={factorynew} key={factorynew.id} />
