@@ -773,9 +773,15 @@ MEDIA QUERY
     color: #ffffff !important;
   }
 
-  .navigation .logo__link {
-    opacity: 0;
-    visibility: hidden;
+  #market .last{
+    background-color: rgba(128, 128, 128, 0.534);
+  }
+  #landing .last{
+    color: #171a20 !important;
+  }
+  #market .logo__link{
+    opacity: 1;
+    visibility: visible;
   }
 
   .header__container--lower {
