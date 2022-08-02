@@ -6,6 +6,7 @@ import Carsnew from "./ui/Carsnew";
 const Carlistlanding = ({ factorynew: initialfactorynew }) => {
   const [inputValue, setInputValue] = useState("");
   const [factorynew, setFactorynew] = useState(initialfactorynew);
+  const newArr = [];
 
   function filterCars(filter) {
     if (filter === "2020") {
@@ -71,6 +72,10 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
                     .includes(inputValue.toLocaleLowerCase())
                 ) {
                   return factorynew;
+                }else if(factorynew.model_year === 2022){
+                  newArr.push(factorynew)
+                return newArr
+
                 }
                 return false;
               })
