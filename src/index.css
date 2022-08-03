@@ -17,6 +17,7 @@ html {
 .App section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  
 }
 
 ::-webkit-scrollbar {
@@ -948,6 +949,7 @@ ACCOUNT
 MEDIA QUERY 
 */
 @media (max-width: 1200px) {
+ 
   .nav__container.active {
     background: transparent;
   }
@@ -995,6 +997,9 @@ MEDIA QUERY
 @media (max-width: 625px) {
   .facts {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .App section {
+    scroll-snap-align: none;
   }
 }
 
