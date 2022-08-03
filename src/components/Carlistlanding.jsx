@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
 import Nav from "../components/nav";
-import Carsnew from "./ui/Carsnew";
+import InputValueCar from "./ui/InputValueCar";
+import M5Filter from "./ui/M5Filter";
 
 const Carlistlanding = ({ factorynew: initialfactorynew }) => {
   const [inputValue, setInputValue] = useState("");
   const [factorynew, setFactorynew] = useState(initialfactorynew);
-  const newArr = [];
+  const [checkedM5, setCheckedM5] = useState(false);
 
   function filterCars(filter) {
     if (filter === "2020") {
@@ -62,26 +63,24 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
               </select>
             </div>
 
-            {factorynew
-              .filter((factorynew) => {
-                if (inputValue === "") {
-                  return factorynew;
-                } else if (
-                  factorynew.title
-                    .toLowerCase()
-                    .includes(inputValue.toLocaleLowerCase())
-                ) {
-                  return factorynew;
-                }else if(factorynew.model_year === 2022){
-                  newArr.push(factorynew)
-                return newArr
+            <div className="checkboxes">
+              <div className="checkbox">
+                <label className="label" for="agreement">
+                  M5
+                </label>
+                <input
+                  type="checkbox"
+                  checked={checkedM5}
+                  onChange={() => setCheckedM5(!checkedM5)}
+                />
+              </div>
+            </div>
 
-                }
-                return false;
-              })
-              .map((factorynew) => (
-                <Carsnew factorynew={factorynew} key={factorynew.id} />
-              ))}
+            {checkedM5 ? (
+              <M5Filter factorynew={factorynew} />
+            ) : (
+              <InputValueCar factorynew={factorynew} inputValue={inputValue} />
+            )}
           </div>
         </div>
       </div>
