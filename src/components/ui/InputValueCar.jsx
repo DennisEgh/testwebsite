@@ -21,7 +21,8 @@ const InputValueCar = ({
             !checked7Series
           ) {
             return factorynew;
-          } else if (
+          }
+          if (
             factorynew.title
               .toLowerCase()
               .includes(inputValue.toLocaleLowerCase()) &&
@@ -36,7 +37,8 @@ const InputValueCar = ({
             !checked7Series
           ) {
             return factorynew;
-          } else if (
+          }
+          if (
             checkedM5 &&
             factorynew.title
               .toLowerCase()
@@ -51,7 +53,8 @@ const InputValueCar = ({
               .includes(inputValue.toLocaleLowerCase())
           ) {
             return factorynew.model === "BMW M5";
-          } else if (
+          }
+          if (
             checkedM3 &&
             factorynew.title
               .toLowerCase()
@@ -66,7 +69,8 @@ const InputValueCar = ({
               .includes(inputValue.toLocaleLowerCase())
           ) {
             return factorynew.model === "BMW M3";
-          } else if (
+          }
+          if (
             !checkedM3 &&
             factorynew.title
               .toLowerCase()
@@ -81,7 +85,8 @@ const InputValueCar = ({
               .includes(inputValue.toLocaleLowerCase())
           ) {
             return factorynew.model === "BMW 7 Series";
-          } else if (
+          }
+          if (
             checkedM5 &&
             factorynew.title
               .toLowerCase()
@@ -98,7 +103,8 @@ const InputValueCar = ({
             return (
               factorynew.model === "BMW M5" || factorynew.model === "BMW M3"
             );
-          } else if (
+          }
+          if (
             !checkedM5 &&
             factorynew.title
               .toLowerCase()
@@ -116,7 +122,8 @@ const InputValueCar = ({
               factorynew.model === "BMW 7 Series" ||
               factorynew.model === "BMW M3"
             );
-          } else if (
+          }
+          if (
             checkedM5 &&
             factorynew.title
               .toLowerCase()
@@ -134,7 +141,8 @@ const InputValueCar = ({
               factorynew.model === "BMW 7 Series" ||
               factorynew.model === "BMW M5"
             );
-          } else if (
+          }
+          if (
             checkedM5 &&
             factorynew.title
               .toLowerCase()
