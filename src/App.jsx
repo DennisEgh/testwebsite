@@ -51,7 +51,7 @@ function App() {
             path="/Signin"
             element={
               userExists ? (
-                <Navigate replace to="/" />
+                <Navigate replace to="/Account" />
               ) : (
                 <SignIn
                   user={user}
