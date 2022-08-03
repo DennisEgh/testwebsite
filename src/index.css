@@ -14,11 +14,9 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-
-.App section{
+.App section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  
 }
 
 ::-webkit-scrollbar {
@@ -102,8 +100,7 @@ h2 {
   visibility: visible !important;
 }
 
-
-.nostock{
+.nostock {
   cursor: not-allowed;
 }
 /*
@@ -716,7 +713,7 @@ MARKET SPECIFIC
   position: relative;
   left: 100%;
   font-size: 20px;
-  top:4px;
+  top: 4px;
   color: black;
 }
 
@@ -789,6 +786,151 @@ CARD
   line-height: 20px;
   font-weight: bold;
   margin-top: 50px;
+}
+
+/*
+SIGN IN
+*/
+
+#sign-in .nav__links {
+  opacity: 0;
+  visibility: hidden;
+}
+#sign-in .nav__container--upper {
+  display: none;
+}
+#sign-in nav {
+  position: relative;
+  margin-top: 0;
+}
+.sign-in__container {
+  height: 93.8vh;
+  display: flex;
+  justify-content: center;
+}
+.sign-in__content {
+  width: 100%;
+  max-width: 380px;
+}
+.sign-in__title {
+  font-size: 34px;
+  font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 8px;
+  text-align: center;
+  color: #171a20;
+}
+.sign-in__column {
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+.sign-in__para {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5d5c61;
+  width: 100%;
+  max-width: 332px;
+  height: 38px;
+  padding: 0 40px;
+}
+.input__wrap {
+  width: 100%;
+
+  height: 38px;
+  padding: 0 20px;
+}
+.login__input {
+  width: 100%;
+  height: 100%;
+  border-radius: 22.5px;
+  line-height: 100%;
+  padding-right: 22.5px;
+  padding-left: 22.5px;
+  border: none;
+  outline: 0;
+  background-color: rgba(148, 148, 148, 0.2);
+  color: #393c41;
+  font-size: 16px;
+}
+
+.sign-in__button {
+  width: 100%;
+  height: 100%;
+  border-radius: 22.5px;
+  line-height: 100%;
+  padding-right: 22.5px;
+  padding-left: 22.5px;
+  border: none;
+  outline: 0;
+  background-color: #3d69e1;
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+.button__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 38px;
+  padding: 0 20px;
+  margin-top: 16px;
+}
+.sign-in__button:active{
+transform: scale(0.95);
+
+}
+.need__help{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+.need__help--link{
+  font-size: 12px;
+    box-shadow: none;
+    text-align: center;
+    text-decoration: underline;
+    line-height: 1.2rem;
+    color: #393c41;
+    cursor: not-allowed;
+}
+.seperator{
+  padding: 0 0.5rem;
+}
+.or{
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  align-items: center;
+  color: #5c5d61;
+  font-weight: 500 !important;
+  white-space: nowrap;
+}
+.or::before{
+  content: "";
+    display: inline-block;
+    width: 40%;
+    height: 1px;
+    margin: 0 8px;
+    background-color: gray;
+}
+.or::after{
+  content: "";
+  display: inline-block;
+  width: 40%;
+  height: 1px;
+  margin: 0 8px;
+  background-color: gray;
+}
+
+.create{
+  background-color: white;
+  color: #181B21;
+  border: 3px solid #171a20;
+  font-size: 14px;
+  font-weight: 500;
 }
 /*
 MEDIA QUERY 
