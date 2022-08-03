@@ -3,11 +3,8 @@ import { Link } from "react-router-dom";
 import invert from "../assets/logoinvert.png";
 import Menu from "./subcomponents/Menu";
 
-
-export default function Nav({user, setUser}) {
+export default function Nav({ user, setUser }) {
   const [navbar, setNavbar] = useState(false);
-
-
 
   const changeNav = () => {
     window.scrollY >= 20 ? setNavbar(true) : setNavbar(false);
@@ -99,7 +96,7 @@ export default function Nav({user, setUser}) {
           <ul className="nav__links">
             <li className="nav__list">
               <Link
-                to={user ? "Account" : "Register"} 
+                to="Account"
                 className={navbar ? "nav__link active" : "nav__link"}
               >
                 Account

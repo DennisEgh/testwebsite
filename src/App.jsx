@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Home from "./pages/home";
 import { factorynew } from "./factorynew.js";
 import Newcarmarket from "./pages/Newcarmarket";
@@ -13,11 +18,13 @@ import Footer from "./components/Footer";
 
 function App() {
   const [user, setUser] = useState({});
+  const [userExists, setUserExists] = useState(false);
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
+        setUserExists(true);
         console.log(user.email);
       }
     });
@@ -43,12 +50,33 @@ function App() {
           />
           <Route
             path="/Signin"
-            element={<SignIn user={user} setUser={setUser} />}
+            element={
+              userExists ? (
+                <Navigate replace to="/" />
+              ) : (
+                <SignIn
+                  user={user}
+                  setUser={setUser}
+                  setUserExists={setUserExists}
+                />
+              )
+            }
           />
           <Route path="/Register" element={<Register />} />
           <Route
+            exact
             path="/Account"
-            element={<Account user={user} setUser={setUser} />}
+            element={
+              userExists ? (
+                <Account
+                  user={user}
+                  setUser={setUser}
+                  setUserExists={setUserExists}
+                />
+              ) : (
+                <Navigate replace to={"/SignIn"} />
+              )
+            }
           />
         </Routes>
         <Footer />

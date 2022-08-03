@@ -4,9 +4,10 @@ import Nav from "../components/nav";
 import { auth } from "../firebase/init";
 import { signInWithEmailAndPassword} from "firebase/auth";
 
-const SignIn = ({user, setUser}) => {
+const SignIn = ({user, setUser, setUserExists}) => {
   const [inputValuePassword, setInputValuePassword] = useState("");
   const [inputValueEmail, setInputValueEmail] = useState("");
+  
  
   
 
@@ -14,12 +15,15 @@ const SignIn = ({user, setUser}) => {
     signInWithEmailAndPassword(auth, inputValueEmail, inputValuePassword)
       .then(({ user }) => {
        
-        setUser(user.email);
+        setUser(user);
+        setUserExists(true);
       })
       .catch((error) => {
         console.log(error);
       });
-  }
+    }
+
+   
   return (
     <section id="sign-in">
       <Nav user={user} setUser={setUser} />

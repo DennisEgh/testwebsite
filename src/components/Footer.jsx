@@ -29,8 +29,9 @@ const Footer = () => {
                 <li className="footer__list">
                     <Link className='footer__link' to="">
                         Careers
-                    </Link>
+                    </Link> 
                 </li>
+                
                 <li className="footer__list hide">
                     <Link className='footer__link' to="">
                         News

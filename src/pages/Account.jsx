@@ -4,11 +4,12 @@ import { auth } from "../firebase/init";
 import { signOut } from "firebase/auth";
 import Nav from "../components/nav";
 
-const Account = ({user, setUser}) => {
+const Account = ({user, setUser, setUserExists}) => {
  function logOut(){
 signOut(auth);
 setUser({});
-console.log(user)
+setUserExists(false);
+
  }
 
 
