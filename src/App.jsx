@@ -6,6 +6,8 @@ import Newcarmarket from "./pages/Newcarmarket";
 import Marketspecific from "./pages/Marketspecific";
 import SignIn from "./pages/SignIn";
 
+import Register from "./pages/Register";
+ 
 
 
 
@@ -19,6 +21,7 @@ function App() {
           <Route path="/Newcarmarket" element={<Newcarmarket factorynew={factorynew}/>} />
           <Route path="/Newcarmarket/:id" element={<Marketspecific factorynew={factorynew} />}/>
           <Route path="/Signin" element={<SignIn />} />
+          <Route path="/Register" element={<Register />} />
    
         </Routes>
       </div>
