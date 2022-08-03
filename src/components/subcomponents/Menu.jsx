@@ -56,7 +56,7 @@ export default function Menu() {
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="" className="modal__link">
+              <Link to="/SignIn" className="modal__link">
                 <p className="modal__para">Account</p>
               </Link>
             </li>
