@@ -14,12 +14,14 @@ setUserExists(false);
 
 
   return (
-    <div>
+    <section id="account">
+
       <Nav  />
       <button onClick={logOut} className="signout">
         signout
       </button>
-    </div>
+    </section>
+    
   );
 };
 

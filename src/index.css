@@ -950,8 +950,21 @@ ACCOUNT
   position: relative;
   top: 200px;
 }
+#account{
+  height: 90vh;
+}
 
-
+#account .nav__links {
+  opacity: 0;
+  visibility: hidden;
+}
+#account .nav__container--upper {
+  display: none;
+}
+#account nav {
+  position: relative;
+  margin-top: 0;
+}
 
 /*
 FOOTER
