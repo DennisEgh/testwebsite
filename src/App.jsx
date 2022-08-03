@@ -25,7 +25,6 @@ function App() {
       if (user) {
         setUser(user);
         setUserExists(true);
-        
       }
     });
   }, []);
@@ -62,9 +61,11 @@ function App() {
               )
             }
           />
-          <Route path="/Register" element={<Register />} />
           <Route
-            exact
+            path="/Register"
+            element={userExists ? <Navigate replace to="/" /> : <Register />}
+          />
+          <Route
             path="/Account"
             element={
               userExists ? (

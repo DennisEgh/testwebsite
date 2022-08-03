@@ -96,7 +96,7 @@ export default function Nav({ user, setUser }) {
           <ul className="nav__links">
             <li className="nav__list">
               <Link
-                to="Account"
+                to="/Account"
                 className={navbar ? "nav__link active" : "nav__link"}
               >
                 Account

@@ -795,7 +795,7 @@ SIGN IN
 */
 
 #sign-in{
-  height: 100vh;
+  height: 80vh !important;
 }
 
 #sign-in .nav__links {
