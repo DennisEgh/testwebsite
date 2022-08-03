@@ -25,7 +25,7 @@ function App() {
       if (user) {
         setUser(user);
         setUserExists(true);
-        console.log(user.email);
+        
       }
     });
   }, []);
