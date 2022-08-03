@@ -7,7 +7,7 @@ const M5Filter = ({factorynew}) => {
         {factorynew
             .filter((factorynew) => {
                 
-                return factorynew.model == "BMW M5";
+                return factorynew.model === "BMW M5";
                 
             })
             .map((factorynew) => (

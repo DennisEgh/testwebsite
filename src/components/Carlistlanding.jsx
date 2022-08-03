@@ -31,6 +31,8 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
     }
   }
 
+
+
   return (
     <div id="market">
       <div id="market__body">
@@ -38,7 +40,7 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
         <div className="market__main">
           <div className="market__container">
             <div className="row">
-              <form id="search" action="search" autoComplete="off">
+              <form id="search" action={null} autoComplete="off">
                 <input
                   className="market__input"
                   type="text"
@@ -69,6 +71,7 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
                   M5
                 </label>
                 <input
+                id="checkbox"
                   type="checkbox"
                   checked={checkedM5}
                   onChange={() => setCheckedM5(!checkedM5)}
