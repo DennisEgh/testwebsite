@@ -17,13 +17,13 @@ export default function Thirdcar() {
 
         <div data-aos="fade-up" className="header__container--lower">
           <div className="order__selection ">
-            <Link to="">
+            <Link to="/Newcarmarket">
               <div className="custom__order">
                 <p className="order__selection--para order">FACTORY NEW</p>
               </div>
             </Link>
 
-            <Link to="">
+            <Link to="/Newcarmarket">
               <div className="existing__inventory">
                 <p className="order__selection--para existing">PRE-OWNED</p>
               </div>
