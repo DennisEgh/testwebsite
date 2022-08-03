@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import invert from "../assets/logoinvert.png"
 import Menu from "./subcomponents/Menu";
+import { auth } from "../firebase/init";
 
 export default function Nav() {
   const [navbar, setNavbar] = useState(false);

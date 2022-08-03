@@ -57,29 +57,20 @@ export default function Menu() {
             </li>
             <li className="modal__list">
               <Link to="" className="modal__link">
-                <p className="modal__para">Factory New</p>
+                <p className="modal__para">Account</p>
               </Link>
             </li>
             <li className="modal__list">
               <Link to="" className="modal__link">
-                <p className="modal__para">Pre-Owned</p>
+                <p className="modal__para">FAQ</p>
               </Link>
             </li>
             <li className="modal__list">
               <Link to="" className="modal__link">
-                <p className="modal__para">Trade-In</p>
+                <p className="modal__para">News</p>
               </Link>
             </li>
-            <li className="modal__list">
-              <Link to="" className="modal__link">
-                <p className="modal__para">Test Drive</p>
-              </Link>
-            </li>
-            <li className="modal__list">
-              <Link to="" className="modal__link">
-                <p className="modal__para">Mechanic</p>
-              </Link>
-            </li>
+           
           </ul>
         </div>
       </div>

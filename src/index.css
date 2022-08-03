@@ -848,7 +848,7 @@ SIGN IN
   padding-left: 22.5px;
   border: none;
   outline: 0;
-  background-color: rgba(148, 148, 148, 0.2);
+  background-color: #f5f5f5;
   color: #393c41;
   font-size: 16px;
 }
@@ -931,6 +931,9 @@ transform: scale(0.95);
   border: 3px solid #171a20;
   font-size: 14px;
   font-weight: 500;
+}
+.register__link{
+  width: 100%;
 }
 /*
 MEDIA QUERY 
