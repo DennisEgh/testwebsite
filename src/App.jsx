@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import Account from "./pages/Account";
 import { auth } from "./firebase/init";
 import { onAuthStateChanged } from "firebase/auth";
+import Footer from "./components/Footer";
 
 function App() {
   const [user, setUser] = useState({});
@@ -50,6 +51,7 @@ function App() {
             element={<Account user={user} setUser={setUser} />}
           />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

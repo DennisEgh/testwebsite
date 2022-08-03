@@ -14,6 +14,7 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+
 .App section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -793,6 +794,10 @@ CARD
 SIGN IN
 */
 
+#sign-in{
+  height: 100vh;
+}
+
 #sign-in .nav__links {
   opacity: 0;
   visibility: hidden;
@@ -804,6 +809,7 @@ SIGN IN
   position: relative;
   margin-top: 0;
 }
+
 .sign-in__container {
   
   display: flex;
@@ -945,6 +951,34 @@ ACCOUNT
   top: 200px;
 }
 
+
+
+/*
+FOOTER
+*/
+#footer{
+  height: 70px;
+  width: 100%;
+  padding: 0 24px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.footer__lists{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  
+}
+.footer__link{
+  color: #5c5e62;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: not-allowed;
+}
 /*
 MEDIA QUERY 
 */
@@ -1004,6 +1038,17 @@ MEDIA QUERY
 }
 
 @media (max-width: 600px) {
+  .footer__lists{
+    flex-direction: column;
+  }
+  .hide{
+    display: none;
+  }
+  #footer{
+    height: 212px;
+    padding: 16px 24px 20px;
+  }
+ 
   .nav__container {
     padding: 0 8px;
   }
