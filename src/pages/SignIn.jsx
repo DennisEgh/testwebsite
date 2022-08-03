@@ -1,24 +1,28 @@
-import React, {useState} from "react";
+import React, { useState} from "react";
 import { Link } from "react-router-dom";
 import Nav from "../components/nav";
 import { auth } from "../firebase/init";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword} from "firebase/auth";
 
-const SignIn = () => {
+const SignIn = ({user, setUser}) => {
   const [inputValuePassword, setInputValuePassword] = useState("");
   const [inputValueEmail, setInputValueEmail] = useState("");
+ 
+  
+
   function login() {
     signInWithEmailAndPassword(auth, inputValueEmail, inputValuePassword)
-    .then((user) => {
-        console.log(user)
-    })
-    .catch((error) => {
-        console.log(error)
-    })
+      .then(({ user }) => {
+       
+        setUser(user.email);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
   return (
     <section id="sign-in">
-      <Nav />
+      <Nav user={user} setUser={setUser} />
       <div className="sign-in__container">
         <div className="sign-in__content">
           <h1 className="sign-in__title">Sign In</h1>
@@ -53,7 +57,9 @@ const SignIn = () => {
             </div>
           </div>
           <div className="button__wrapper">
-            <button onClick={login} className="sign-in__button">Sign In</button>
+            <button onClick={login} className="sign-in__button">
+              Sign In
+            </button>
           </div>
           <p className="need__help">
             <Link className="need__help--link" to="">

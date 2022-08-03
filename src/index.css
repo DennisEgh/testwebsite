@@ -935,6 +935,15 @@ transform: scale(0.95);
 .register__link{
   width: 100%;
 }
+
+/*
+ACCOUNT
+*/
+.signout{
+  position: relative;
+  top: 200px;
+}
+
 /*
 MEDIA QUERY 
 */

@@ -9,14 +9,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 
-export default function Home() {
+export default function Home({user, setUser}) {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
 
   return (
     <>
-      <Landing />
+      <Landing user={user} setUser={setUser} />
       <Secondcar />
       <Thirdcar />
       <Fourthcar />

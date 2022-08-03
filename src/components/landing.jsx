@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Nav from "./nav";
 
-export default function Landing() {
 
+export default function Landing({user, setUser}) {
+
+ 
 
   return (
     
     <section id="landing">
-      <Nav />
+      <Nav user={user} setUser={setUser} />
       <header>
        
         <div className="header__container--upper">
