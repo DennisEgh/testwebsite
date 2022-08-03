@@ -96,6 +96,10 @@ h2 {
   visibility: visible !important;
 }
 
+
+.nostock{
+  cursor: not-allowed;
+}
 /*
 
 NAVBAR
@@ -600,20 +604,19 @@ NEWCARMARKET
   outline: none;
   padding: 0 16px;
   width: 100%;
-  
 }
 
-.checkboxes{
+.checkboxes {
   margin-top: 25px;
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
-.label{
+.label {
   color: white;
-  
 }
-.checkbox{
+.checkbox {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -635,7 +638,6 @@ MARKET SPECIFIC
   display: flex;
   justify-content: center;
 }
-
 
 .content__wrapper {
   width: 600px;
@@ -659,7 +661,6 @@ MARKET SPECIFIC
   width: 100%;
   border-bottom: #171a20 1px solid;
   border-top: #171a20 1px solid;
-  
 }
 .facts__title {
   font-size: 22px;
@@ -668,57 +669,50 @@ MARKET SPECIFIC
 }
 
 .facts {
-  
   width: 100%;
   max-width: 600px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 16px;
-
 }
 
-
-.icon__container{
+.icon__container {
   display: flex;
 }
-.icon{
+.icon {
   height: 24px;
   width: 24px;
   margin-right: 5px;
-  
 }
-.icon__para{
+.icon__para {
   padding: 0;
 }
 
-.icon__para--container{
+.icon__para--container {
   position: relative;
   top: -9px;
-  
 }
 
-.datainfo{
+.datainfo {
   font-weight: bold;
 }
 
-.contact{
+.contact {
   text-align: end;
   transition: all 300ms ease;
-  
 }
-.contact:hover{
+.contact:hover {
   cursor: not-allowed;
-text-decoration: underline;
+  text-decoration: underline;
 }
 
-.fa-x{
+.fa-x {
   position: relative;
-  left: 100.5%;
+  left: 100%;
   font-size: 20px;
-
+  top:4px;
   color: black;
 }
-
 
 /*
 CARD
@@ -805,13 +799,13 @@ MEDIA QUERY
     color: #ffffff !important;
   }
 
-  #market .last{
+  #market .last {
     background-color: rgba(128, 128, 128, 0.534);
   }
-  #landing .last{
+  #landing .last {
     color: #171a20 !important;
   }
-  #market .logo__link{
+  #market .logo__link {
     opacity: 1;
     visibility: visible;
   }
@@ -838,8 +832,8 @@ MEDIA QUERY
   }
 }
 
-@media (max-width: 625px){
-  .facts{
+@media (max-width: 625px) {
+  .facts {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -935,8 +929,8 @@ MEDIA QUERY
   }
 }
 
-@media (max-width: 500px){
-  .facts{
+@media (max-width: 500px) {
+  .facts {
     grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -194,6 +194,22 @@ export const factorynew = [
         price: 104.900,
         url: "https://images-ext-2.discordapp.net/external/Ws_mWOIFmZB3LBPev4RFPnndhx8nFZuAnAx8gCQxdo0/%3Ftype%3Doriginal/https/i.blocketcdn.se/pictures/0584972381.webp?width=840&height=630",
     },
+    {
+        id: 12,
+        maker: "BMW",
+        title: "BMW 740 Ld xDrive",
+        fuel: "Diesel",
+        transmission: "Automatic",
+        mileage: 0,
+        model_year: 2022,
+        model: "BMW 7 Series",
+        type: "Sedan",
+        drivetrain: "Four-wheel",
+        horsepower: 340,
+        motorsize: 2993,
+        price: 145.700,
+        url: "https://images-ext-2.discordapp.net/external/8pgFcgpzmdSmaR66H0e9se98VNWtXAtifBstxOcwEmU/https/images.autouncle.com/se/car_images/medium_3a1f8c38-4b99-48c2-bb49-6bb7f17f71a9_bmw-730-d-x-drive-265hk-m-sport-taklucka-hud-h-k-softclose.jpg",
+    },
     
 
 

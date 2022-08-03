@@ -17,17 +17,13 @@ export default function Sixthcar() {
 
         <div data-aos="fade-up" className="header__container--lower">
           <div className="order__selection">
-            <Link to="">
+            <Link to="" className="nostock">
               <div className="custom__order">
-                <p className="order__selection--para order">FACTORY NEW</p>
+                <p className="order__selection--para order">OUT OF STOCK</p>
               </div>
             </Link>
 
-            <Link to="">
-              <div className="existing__inventory">
-                <p className="order__selection--para existing">PRE-OWNED</p>
-              </div>
-            </Link>
+           
           </div>
         </div>
       </header>

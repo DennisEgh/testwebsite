@@ -2,12 +2,14 @@ import React, { useState } from "react";
 
 import Nav from "../components/nav";
 import InputValueCar from "./ui/InputValueCar";
-import M5Filter from "./ui/M5Filter";
+
 
 const Carlistlanding = ({ factorynew: initialfactorynew }) => {
   const [inputValue, setInputValue] = useState("");
   const [factorynew, setFactorynew] = useState(initialfactorynew);
   const [checkedM5, setCheckedM5] = useState(false);
+  const [checkedM3, setCheckedM3] = useState(false);
+  const [checked7Series, setChecked7Series] = useState(false);
 
   function filterCars(filter) {
     if (filter === "2020") {
@@ -30,8 +32,7 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
       setFactorynew(factorynew.slice().sort((a, b) => a.mileage - b.mileage));
     }
   }
-
-
+  
 
   return (
     <div id="market">
@@ -71,19 +72,43 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
                   M5
                 </label>
                 <input
-                id="checkbox"
+                  id="checkbox"
                   type="checkbox"
                   checked={checkedM5}
                   onChange={() => setCheckedM5(!checkedM5)}
                 />
               </div>
+              <div className="checkbox">
+                <label className="label" for="agreement">
+                  M3
+                </label>
+                <input
+                  id="checkbox"
+                  type="checkbox"
+                  checked={checkedM3}
+                  onChange={() => setCheckedM3(!checkedM3)}
+                />
+              </div>
+              <div className="checkbox">
+                <label className="label" for="agreement">
+                  7 Series
+                </label>
+                <input
+                  id="checkbox"
+                  type="checkbox"
+                  checked={checked7Series}
+                  onChange={() => setChecked7Series(!checked7Series)}
+                />
+              </div>
             </div>
 
-            {checkedM5 ? (
-              <M5Filter factorynew={factorynew} />
-            ) : (
-              <InputValueCar factorynew={factorynew} inputValue={inputValue} />
-            )}
+         
+              <InputValueCar factorynew={factorynew} inputValue={inputValue} 
+              checkedM5={checkedM5} 
+              checkedM3={checkedM3}
+              checked7Series={checked7Series}
+              />
+           
           </div>
         </div>
       </div>
