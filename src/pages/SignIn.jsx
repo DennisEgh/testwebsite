@@ -41,7 +41,9 @@ const SignIn = ({ user, setUser, setUserExists }) => {
       .then(() => {
        
       })
-      .catch((error) => {});
+      .catch((error) => {
+        console.log(error)
+      });
   }
 
   return (
