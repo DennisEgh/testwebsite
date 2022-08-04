@@ -27,6 +27,8 @@ const SignIn = ({ user, setUser, setUserExists }) => {
       .catch((error) => {
         loginFail.classList.add("display");
         loginbtn.classList.add("pointernone");
+        spinner.classList.toggle("display");
+    buttonsign.classList.toggle("displaynone");
         setTimeout(() => {
           loginFail.classList.remove("display");
           loginbtn.classList.remove("pointernone");
