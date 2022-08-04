@@ -39,8 +39,7 @@ const SignIn = ({ user, setUser, setUserExists }) => {
     anonbtnsign.classList.add("displaynone")
     signInAnonymously(auth)
       .then(() => {
-        setUser(user);
-        setUserExists(true);
+       
       })
       .catch((error) => {});
   }
