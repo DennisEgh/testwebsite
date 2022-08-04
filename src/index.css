@@ -1175,9 +1175,7 @@ MEDIA QUERY
 }
 
 @media (max-width: 600px) {
-  .account__lists{
-    padding-top: 60px;
-  }
+ 
 
   .footer__lists {
     flex-direction: column;
