@@ -9,13 +9,15 @@
 
 html {
   scroll-behavior: smooth;
-
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
  
 }
 
 
-.App{
-  overflow: hidden;
+.App section{
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 ::-webkit-scrollbar {
