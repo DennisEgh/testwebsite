@@ -15,7 +15,7 @@ export default function Sixthcar() {
           </div>
         </div>
 
-        <div data-aos="fade-up" className="header__container--lower">
+        <div  className="header__container--lower">
           <div className="order__selection">
             <Link to="" className="nostock">
               <div className="custom__order">

@@ -18,6 +18,7 @@ html {
 .App section{
   scroll-snap-align: start;
   scroll-snap-stop: always;
+
 }
 
 
@@ -220,11 +221,10 @@ LANDING
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-header {
   height: 100vh;
 }
+
+
 
 .header__container--upper {
   width: 100%;
@@ -235,7 +235,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   position: relative;
-  top: 12.5%;
+  top: 121px;
   z-index: 1;
 }
 
@@ -297,8 +297,9 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 68%;
+  top: 660px;
   align-items: center;
+
 }
 
 .order__selection {
@@ -417,6 +418,7 @@ SECOND CAR
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 /* 
@@ -427,6 +429,7 @@ THIRD CAR
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 /* 
@@ -437,6 +440,7 @@ FOURTH CAR
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 /* 
@@ -447,6 +451,7 @@ FIFTH CAR
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 /* 
@@ -457,6 +462,7 @@ SIXTH CAR
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 /*
@@ -1163,10 +1169,7 @@ text-decoration: underline;
 MEDIA QUERY 
 */
 @media (max-width: 1200px) {
-  .App section{
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
-  }
+  
   .content__title{
     display: none;
   }
@@ -1201,7 +1204,7 @@ MEDIA QUERY
   }
 
   .header__container--lower {
-    top: 42.5%;
+    top: 380px;
   }
 
   .logo__motto {
@@ -1290,7 +1293,7 @@ MEDIA QUERY
   }
 
   .header__container--lower {
-    top: 20.5%;
+    top: 200px;
   }
   .market__title {
     font-size: 32px;
@@ -1346,4 +1349,11 @@ MEDIA QUERY
   .profile__settings{
     gap: 20px;
   }
+}
+@media (max-width: 465px){
+  .market__input{
+  padding-left: 22.5px;
+   
+  }
+ 
 }
