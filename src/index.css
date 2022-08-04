@@ -1112,6 +1112,9 @@ text-decoration: underline;
 MEDIA QUERY 
 */
 @media (max-width: 1200px) {
+  .content__title{
+    display: none;
+  }
   .account__container{
     display: block;
   }
@@ -1177,9 +1180,7 @@ MEDIA QUERY
   .account__lists{
     padding-top: 60px;
   }
-  #account{
-    height: calc(80vh - 95px);
-  }
+
   .footer__lists {
     flex-direction: column;
   }
