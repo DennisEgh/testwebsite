@@ -17,117 +17,119 @@ const Marketspecific = ({ factorynew }) => {
   const factory = factorynew.find((factorynew) => +factorynew.id === +id);
 
   return (
-    <div id="market">
-      <div id="market__body" className="market__specific">
-        <Nav />
-        <div className="market__main">
-          <div className="market__container">
-            <div className="row">
-              <div className="market__specific--content">
-                <div className="content__wrapper">
-
+    <section className="carsmarket">
+      <div id="market">
+        <div id="market__body" className="market__specific">
+          <Nav />
+          <div className="market__main">
+            <div className="market__container">
+              <div className="row">
+                <div className="market__specific--content">
+                  <div className="content__wrapper">
                     <Link to="/Newcarmarket">
-
-                <FontAwesomeIcon icon="fa-solid fa-x" />
+                      <FontAwesomeIcon icon="fa-solid fa-x" />
                     </Link>
-                  <figure className="market__specific--figure">
-                    <img
-                      className="market__specific--img"
-                      src={factory.url}
-                      alt=""
-                    />
-                  </figure>
-                  <div className="market__specific--info">
-                    <h1 className="market__specific--title">{factory.title}</h1>
-                    <div className="market__specific--price">
-                      <Carprice price={factory.price} />
-                    </div>
-                    <div className="market__specific--facts">
-                      <h1 className="facts__title">Facts</h1>
-                      <div className="facts">
-                        <div className="icon__container">
-                          <img src={fuel} alt="" className="icon" />
-                          <div className="icon__para--container">
-                            <p className="icon__para">Fuel</p>
+                    <figure className="market__specific--figure">
+                      <img
+                        className="market__specific--img"
+                        src={factory.url}
+                        alt=""
+                      />
+                    </figure>
+                    <div className="market__specific--info">
+                      <h1 className="market__specific--title">
+                        {factory.title}
+                      </h1>
+                      <div className="market__specific--price">
+                        <Carprice price={factory.price} />
+                      </div>
+                      <div className="market__specific--facts">
+                        <h1 className="facts__title">Facts</h1>
+                        <div className="facts">
+                          <div className="icon__container">
+                            <img src={fuel} alt="" className="icon" />
+                            <div className="icon__para--container">
+                              <p className="icon__para">Fuel</p>
 
-                            <p className="icon__para datainfo">
-                              {factory.fuel}
-                            </p>
+                              <p className="icon__para datainfo">
+                                {factory.fuel}
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div className="icon__container">
-                          <img src={transmission} alt="" className="icon" />
-                          <div className="icon__para--container">
-                            <p className="icon__para">Transmission</p>
+                          <div className="icon__container">
+                            <img src={transmission} alt="" className="icon" />
+                            <div className="icon__para--container">
+                              <p className="icon__para">Transmission</p>
 
-                            <p className="icon__para datainfo">
-                              {factory.transmission}
-                            </p>
+                              <p className="icon__para datainfo">
+                                {factory.transmission}
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div className="icon__container">
-                          <img src={mileage} alt="" className="icon" />
-                          <div className="icon__para--container">
-                            <p className="icon__para">Mileage</p>
+                          <div className="icon__container">
+                            <img src={mileage} alt="" className="icon" />
+                            <div className="icon__para--container">
+                              <p className="icon__para">Mileage</p>
 
-                            <p className="icon__para datainfo">
-                              {factory.mileage}
-                            </p>
+                              <p className="icon__para datainfo">
+                                {factory.mileage}
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div className="icon__container">
-                          <img src={model} alt="" className="icon" />
-                          <div className="icon__para--container">
-                            <p className="icon__para">Model</p>
+                          <div className="icon__container">
+                            <img src={model} alt="" className="icon" />
+                            <div className="icon__para--container">
+                              <p className="icon__para">Model</p>
 
-                            <p className="icon__para datainfo">
-                              {factory.model_year}
-                            </p>
+                              <p className="icon__para datainfo">
+                                {factory.model_year}
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div className="icon__container">
-                          <img src={types} alt="" className="icon" />
-                          <div className="icon__para--container">
-                            <p className="icon__para">Type</p>
+                          <div className="icon__container">
+                            <img src={types} alt="" className="icon" />
+                            <div className="icon__para--container">
+                              <p className="icon__para">Type</p>
 
-                            <p className="icon__para datainfo">
-                              {factory.type}
-                            </p>
+                              <p className="icon__para datainfo">
+                                {factory.type}
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div className="icon__container">
-                          <img src={drivetrain} alt="" className="icon" />
-                          <div className="icon__para--container">
-                            <p className="icon__para">Drivetrain</p>
+                          <div className="icon__container">
+                            <img src={drivetrain} alt="" className="icon" />
+                            <div className="icon__para--container">
+                              <p className="icon__para">Drivetrain</p>
 
-                            <p className="icon__para datainfo">
-                              {factory.drivetrain}
-                            </p>
+                              <p className="icon__para datainfo">
+                                {factory.drivetrain}
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div className="icon__container">
-                          <img src={hp} alt="" className="icon" />
-                          <div className="icon__para--container">
-                            <p className="icon__para">Horsepower</p>
+                          <div className="icon__container">
+                            <img src={hp} alt="" className="icon" />
+                            <div className="icon__para--container">
+                              <p className="icon__para">Horsepower</p>
 
-                            <p className="icon__para datainfo">
-                              {factory.horsepower} HP
-                            </p>
+                              <p className="icon__para datainfo">
+                                {factory.horsepower} HP
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div className="icon__container">
-                          <img src={motorsize} alt="" className="icon" />
-                          <div className="icon__para--container">
-                            <p className="icon__para">Motorsize</p>
+                          <div className="icon__container">
+                            <img src={motorsize} alt="" className="icon" />
+                            <div className="icon__para--container">
+                              <p className="icon__para">Motorsize</p>
 
-                            <p className="icon__para datainfo">
-                              {factory.motorsize} cc
-                            </p>
+                              <p className="icon__para datainfo">
+                                {factory.motorsize} cc
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
+                      <div className="contact">Contact</div>
                     </div>
-                    <div className="contact">Contact</div>
                   </div>
                 </div>
               </div>
@@ -135,7 +137,7 @@ const Marketspecific = ({ factorynew }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

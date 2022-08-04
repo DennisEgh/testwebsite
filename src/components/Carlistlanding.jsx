@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Nav from "../components/nav";
 import InputValueCar from "./ui/InputValueCar";
@@ -10,7 +10,8 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
   const [checkedM5, setCheckedM5] = useState(false);
   const [checkedM3, setCheckedM3] = useState(false);
   const [checked7Series, setChecked7Series] = useState(false);
-
+  
+  
   function filterCars(filter) {
     if (filter === "2020") {
       setFactorynew(
@@ -35,6 +36,8 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
   
 
   return (
+    <section id="carsmarket">
+
     <div id="market">
       <div id="market__body">
         <Nav />
@@ -48,13 +51,13 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
                   placeholder="Find your car..."
                   onChange={(e) => setInputValue(e.target.value)}
                   value={inputValue}
-                />
+                  />
               </form>
               <select
                 id="filter"
                 defaultValue="DEFAULT"
                 onChange={(event) => filterCars(event.target.value)}
-              >
+                >
                 <option value="DEFAULT" disabled>
                   Sort
                 </option>
@@ -76,7 +79,7 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
                   type="checkbox"
                   checked={checkedM5}
                   onChange={() => setCheckedM5(!checkedM5)}
-                />
+                  />
               </div>
               <div className="checkbox">
                 <label className="label" for="agreement">
@@ -87,7 +90,7 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
                   type="checkbox"
                   checked={checkedM3}
                   onChange={() => setCheckedM3(!checkedM3)}
-                />
+                  />
               </div>
               <div className="checkbox">
                 <label className="label" for="agreement">
@@ -98,7 +101,7 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
                   type="checkbox"
                   checked={checked7Series}
                   onChange={() => setChecked7Series(!checked7Series)}
-                />
+                  />
               </div>
             </div>
 
@@ -113,6 +116,7 @@ const Carlistlanding = ({ factorynew: initialfactorynew }) => {
         </div>
       </div>
     </div>
+              </section>
   );
 };
 

@@ -20,6 +20,8 @@ html {
   scroll-snap-stop: always;
 }
 
+
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -103,6 +105,14 @@ h2 {
 
 .nostock {
   cursor: not-allowed;
+}
+
+.display{
+  display: block !important;
+}
+
+.pointernone{
+  pointer-events: none !important;
 }
 /*
 
@@ -520,6 +530,8 @@ MENU
 /*
 NEWCARMARKET
 */
+
+
 #market .modal__backdrop,
 #market .modal {
   top: 0px;
@@ -558,7 +570,7 @@ NEWCARMARKET
   display: flex;
   flex: 1 1;
   flex-direction: column;
-  height: 1000vh;
+  height: 300vh;
   background-color: #171a20;
 }
 .market__main {
@@ -793,6 +805,12 @@ CARD
 SIGN IN
 */
 
+.loginfail{
+  text-align: center;
+  color: red;
+
+ display: none;
+}
 
 
 #sign-in .nav__links {
@@ -936,6 +954,12 @@ SIGN IN
 }
 .register__link {
   width: 100%;
+}
+
+.registerfail{
+  color: red;
+  text-align: center;
+  display: none;
 }
 
 /*

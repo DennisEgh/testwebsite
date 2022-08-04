@@ -61,7 +61,7 @@ export default function Nav({ user, setUser }) {
             </li>
             <li className="nav__list">
               <Link
-                to="/"
+                to="/Newcarmarket"
                 className={navbar ? "nav__link active" : "nav__link"}
               >
                 7 Series

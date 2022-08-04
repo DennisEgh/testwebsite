@@ -7,6 +7,8 @@ import { signInWithEmailAndPassword, signInAnonymously } from "firebase/auth";
 const SignIn = ({ user, setUser, setUserExists }) => {
   const [inputValuePassword, setInputValuePassword] = useState("");
   const [inputValueEmail, setInputValueEmail] = useState("");
+  let loginFail = document.querySelector(".loginfail");
+  let loginbtn = document.querySelector(".sign-in__button")
 
   function login() {
     signInWithEmailAndPassword(auth, inputValueEmail, inputValuePassword)
@@ -15,18 +17,19 @@ const SignIn = ({ user, setUser, setUserExists }) => {
         setUserExists(true);
       })
       .catch((error) => {
-        console.log(error);
-        
-
+        loginFail.classList.add("display");
+        loginbtn.classList.add("pointernone")
+        setTimeout(() => {
+            loginFail.classList.remove("display"); 
+            loginbtn.classList.remove("pointernone") 
+        }, 2000);
       });
   }
 
   function anonLogIn() {
     signInAnonymously(auth)
       .then(() => {})
-      .catch((error) => {
-        
-      });
+      .catch((error) => {});
   }
 
   return (
@@ -35,6 +38,7 @@ const SignIn = ({ user, setUser, setUserExists }) => {
       <div className="sign-in__container">
         <div className="sign-in__content">
           <h1 className="sign-in__title">Sign In</h1>
+          <div className="loginfail">Invalid password or email</div>
           <div className="sign-in__column">
             <div className="email__container">
               <p className="sign-in__para">Email Address</p>
@@ -79,6 +83,7 @@ const SignIn = ({ user, setUser, setUserExists }) => {
               Forgot password?
             </Link>
           </p>
+
           <span className="or">OR</span>
           <div className="button__wrapper">
             <Link className="register__link" to="/Register">
