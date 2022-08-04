@@ -5,6 +5,7 @@ import { signOut } from "firebase/auth";
 import Nav from "../components/nav";
 import logout from "../assets/logout.svg"
 import { Link } from "react-router-dom";
+import userlogo from "../assets/user.png"
 
 const Account = ({ user, setUser, setUserExists, userExists }) => {
   function logOut() {
@@ -35,7 +36,7 @@ const Account = ({ user, setUser, setUserExists, userExists }) => {
           <li className="account__list">
             <Link className="account__link" to="/Profilesettings">
               <div className="image__bg inactive">
-                <img className="account__img" src={house} alt="" />
+                <img className="account__img" src={userlogo} alt="" />
               </div>
               <h1 className="account__para">Profile Settings</h1>
             </Link>
