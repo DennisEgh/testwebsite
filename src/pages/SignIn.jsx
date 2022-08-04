@@ -38,7 +38,10 @@ const SignIn = ({ user, setUser, setUserExists }) => {
     spinneranon.classList.add("display")
     anonbtnsign.classList.add("displaynone")
     signInAnonymously(auth)
-      .then(() => {})
+      .then(() => {
+        setUser(user);
+        setUserExists(true);
+      })
       .catch((error) => {});
   }
 
