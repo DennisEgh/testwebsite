@@ -1169,7 +1169,10 @@ text-decoration: underline;
 MEDIA QUERY 
 */
 @media (max-width: 1200px) {
-  
+  .App section{
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
+  }
   .content__title{
     display: none;
   }
