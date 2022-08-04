@@ -16,16 +16,18 @@ const SignIn = ({ user, setUser, setUserExists }) => {
   let anonbtnsign = document.querySelector(".anonbtnsign");
 
   function login() {
+    spinner.classList.add("display");
+    buttonsign.classList.add("displaynone");
     signInWithEmailAndPassword(auth, inputValueEmail, inputValuePassword)
       .then(({ user }) => {
         setUser(user);
         setUserExists(true);
-        spinner.classList.add("display");
-        buttonsign.classList.add("displaynone");
       })
       .catch((error) => {
         loginFail.classList.add("display");
         loginbtn.classList.add("pointernone");
+        spinner.classList.toggle("display");
+        buttonsign.classList.toggle("displaynone");
 
         setTimeout(() => {
           loginFail.classList.remove("display");

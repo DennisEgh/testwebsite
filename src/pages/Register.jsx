@@ -14,15 +14,17 @@ const Register = () => {
   let buttonsign = document.querySelector(".buttonsign");
 
   function register() {
+    spinner.classList.add("display");
+    buttonsign.classList.add("displaynone");
     createUserWithEmailAndPassword(auth, inputValueEmail, inputValuePassword)
       .then((user) => {
-        spinner.classList.add("display");
-        buttonsign.classList.add("displaynone");
       })
 
       .catch((error) => {
         registerfail.classList.add("display");
         registerbtn.classList.add("pointernone");
+        spinner.classList.toggle("display");
+        buttonsign.classList.toggle("displaynone");
         setTimeout(() => {
           registerfail.classList.remove("display");
           registerbtn.classList.remove("pointernone");
