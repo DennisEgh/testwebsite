@@ -1175,7 +1175,13 @@ MEDIA QUERY
 }
 
 @media (max-width: 600px) {
- 
+  
+ .account__lists{
+  padding-top: 40px;
+ }
+ #account{
+  height: 700px;
+ }
 
   .footer__lists {
     flex-direction: column;
@@ -1184,7 +1190,7 @@ MEDIA QUERY
     display: none;
   }
   #footer {
-    height: 212px;
+    height: 100px;
     padding: 16px 24px 20px;
   }
 

@@ -16,22 +16,22 @@ const Footer = () => {
                         Privacy & Legal
                     </Link>
                 </li>
-                <li className="footer__list">
+                <li className="footer__list hide">
                     <Link className='footer__link' to="">
                         Contact
                     </Link>
                 </li>
-                <li className="footer__list">
+                <li className="footer__list hide">
                     <Link className='footer__link' to="">
                         Vehicle Recalls
                     </Link>
                 </li>
-                <li className="footer__list">
+                <li className="footer__list hide">
                     <Link className='footer__link' to="">
                         Careers
                     </Link> 
                 </li>
-                
+
                 <li className="footer__list hide">
                     <Link className='footer__link' to="">
                         News
