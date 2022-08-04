@@ -1009,11 +1009,12 @@ ACCOUNT
 
 .account__content--container {
   margin-top: 4rem;
-  width: 1000px;
+
 }
 .content__title {
   font-weight: 500;
   font-size: 34px;
+  width: 240px;
 }
 .content__greeting {
   font-weight: 400;
@@ -1055,6 +1056,8 @@ PROFILE SETTINGS
   justify-content: space-between;
   padding-top: 30px;
   display: flex;
+  gap: 10rem;
+  
 }
 
 
@@ -1100,6 +1103,14 @@ text-decoration: underline;
 MEDIA QUERY 
 */
 @media (max-width: 1200px) {
+  .account__container{
+    display: block;
+  }
+  .delete__account{
+    position: relative;
+    top: -6rem;
+  }
+ 
   .nav__container.active {
     background: transparent;
   }
@@ -1258,5 +1269,11 @@ MEDIA QUERY
 @media (max-width: 500px) {
   .facts {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 533px){
+  .profile__settings{
+    gap: 20px;
   }
 }
