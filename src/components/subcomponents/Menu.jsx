@@ -26,32 +26,32 @@ export default function Menu() {
         <div className="modal__list--container">
           <ul className="modal__lists">
             <li className="modal__list">
-              <Link to="" className="modal__link">
+              <Link to="/Newcarmarket" className="modal__link">
                 <p className="modal__para">M5</p>
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="" className="modal__link">
-                <p className="modal__para">3 Series</p>
+              <Link to="/Newcarmarket" className="modal__link">
+                <p className="modal__para">M3</p>
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="" className="modal__link">
+              <Link to="/Newcarmarket" className="modal__link">
                 <p className="modal__para">7 Series</p>
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="" className="modal__link">
+              <Link to="/" className="modal__link">
                 <p className="modal__para">8 Series</p>
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="" className="modal__link">
+              <Link to="/" className="modal__link">
                 <p className="modal__para">IX</p>
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="" className="modal__link">
+              <Link to="/" className="modal__link">
                 <p className="modal__para">I4</p>
               </Link>
             </li>

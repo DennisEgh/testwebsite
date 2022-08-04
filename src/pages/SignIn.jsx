@@ -3,14 +3,22 @@ import { Link } from "react-router-dom";
 import Nav from "../components/nav";
 import { auth } from "../firebase/init";
 import { signInWithEmailAndPassword, signInAnonymously } from "firebase/auth";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SignIn = ({ user, setUser, setUserExists }) => {
   const [inputValuePassword, setInputValuePassword] = useState("");
   const [inputValueEmail, setInputValueEmail] = useState("");
   let loginFail = document.querySelector(".loginfail");
-  let loginbtn = document.querySelector(".sign-in__button")
+  let loginbtn = document.querySelector(".sign-in__button");
+  let spinner = document.querySelector(".spinnersignin");
+  let buttonsign = document.querySelector(".buttonsign");
+  let spinneranon = document.querySelector(".spinneranon")
+  let anonbtnsign = document.querySelector(".anonbtnsign")
 
   function login() {
+    spinner.classList.add("display");
+    buttonsign.classList.add("displaynone");
+
     signInWithEmailAndPassword(auth, inputValueEmail, inputValuePassword)
       .then(({ user }) => {
         setUser(user);
@@ -18,15 +26,17 @@ const SignIn = ({ user, setUser, setUserExists }) => {
       })
       .catch((error) => {
         loginFail.classList.add("display");
-        loginbtn.classList.add("pointernone")
+        loginbtn.classList.add("pointernone");
         setTimeout(() => {
-            loginFail.classList.remove("display"); 
-            loginbtn.classList.remove("pointernone") 
+          loginFail.classList.remove("display");
+          loginbtn.classList.remove("pointernone");
         }, 2000);
       });
   }
 
   function anonLogIn() {
+    spinneranon.classList.add("display")
+    anonbtnsign.classList.add("displaynone")
     signInAnonymously(auth)
       .then(() => {})
       .catch((error) => {});
@@ -71,7 +81,9 @@ const SignIn = ({ user, setUser, setUserExists }) => {
           </div>
           <div className="button__wrapper">
             <button onClick={login} className="sign-in__button">
-              Sign In
+              <FontAwesomeIcon icon="fa-solid fa-spinner" className="spinnersignin" />
+
+              <div className="buttonsign">Sign In</div>
             </button>
           </div>
           <p className="need__help">
@@ -93,7 +105,8 @@ const SignIn = ({ user, setUser, setUserExists }) => {
           <div className="button__wrapper">
             <Link onClick={anonLogIn} className="register__link" to="">
               <button className="sign-in__button create">
-                SIGN IN ANONYMOUSLY
+              <FontAwesomeIcon icon="fa-solid fa-spinner" className="spinneranon" />
+              <div className="anonbtnsign">SIGN IN ANONYMOUSLY</div>
               </button>
             </Link>
           </div>

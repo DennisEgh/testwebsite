@@ -110,6 +110,9 @@ h2 {
 .display{
   display: block !important;
 }
+.displaynone{
+  display: none !important;
+}
 
 .pointernone{
   pointer-events: none !important;
@@ -888,7 +891,11 @@ SIGN IN
   font-size: 16px;
   transition: all 300ms ease;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .button__wrapper {
   display: flex;
   justify-content: center;
@@ -960,6 +967,27 @@ SIGN IN
   color: red;
   text-align: center;
   display: none;
+}
+.spinneranon{
+  color: black !important;
+
+}
+.fa-spinner {
+  font-size: 24px;
+ display: none;
+  animation-name: spin;
+  animation-duration: 650ms;
+  animation-iteration-count: infinite;
+  color: white;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*
@@ -1093,7 +1121,6 @@ PROFILE SETTINGS
   
 }
 
-
 .settings__para{
   font-size: 16px;
   color: #5C5E62;
@@ -1115,7 +1142,7 @@ PROFILE SETTINGS
   margin-top: 8px;
   color: #393c41;
   font-size: 16px;
-  cursor: pointer;
+  cursor: not-allowed;
   width: 35px;
 }
 .edit--btn__para:hover{

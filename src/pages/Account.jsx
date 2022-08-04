@@ -6,7 +6,7 @@ import Nav from "../components/nav";
 import logout from "../assets/logout.svg"
 import { Link } from "react-router-dom";
 
-const Account = ({ user, setUser, setUserExists }) => {
+const Account = ({ user, setUser, setUserExists, userExists }) => {
   function logOut() {
     signOut(auth);
     setUser({});
@@ -14,6 +14,7 @@ const Account = ({ user, setUser, setUserExists }) => {
   }
   
 
+  console.log(userExists)
 
   return (
 
@@ -50,7 +51,7 @@ const Account = ({ user, setUser, setUserExists }) => {
         </ul>
         <div className="account__content--container">
             <h1 className="content__title">Dashboard</h1>
-            <h2 className="content__greeting">Welcome back, {user.email}</h2>
+            <h2 className="content__greeting">Welcome back, {user.email || "Anonymous"}</h2>
         </div>
       </div>
         

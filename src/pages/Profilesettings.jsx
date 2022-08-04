@@ -21,7 +21,7 @@ const Profilesettings = ({ user, setUser, setUserExists }) => {
         window.location.reload();
       })
       .catch((error) => {
-        console.log(error);
+        
       });
   }
   console.log(user);
@@ -61,7 +61,7 @@ const Profilesettings = ({ user, setUser, setUserExists }) => {
           <div className="profile__settings">
             <div className="settings__container">
               <p className="settings__para">Email</p>
-              <p className="setting__para">{user.email}</p>
+              <p className="setting__para">{user.email || "Anonymous@email.com"}</p>
               <p className="edit--btn__para">Edit</p>
             </div>
             <div className="settings__container">
