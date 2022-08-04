@@ -650,7 +650,7 @@ NEWCARMARKET
 MARKET SPECIFIC 
 */
 .market__specific {
-  height: 100vh !important;
+  height: 110vh !important;
 }
 .market__specific .market__container {
   top: 3rem;
