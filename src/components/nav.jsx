@@ -72,7 +72,7 @@ export default function Nav({ user, setUser }) {
                 to="/"
                 className={navbar ? "nav__link active" : "nav__link"}
               >
-                M8
+                8 Series
               </Link>
             </li>
             <li className="nav__list">
