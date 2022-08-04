@@ -1,19 +1,30 @@
 import React from "react";
 import { auth } from "../firebase/init";
+import { deleteUser } from "firebase/auth";
 import house from "../assets/housesvg.png";
 import { signOut } from "firebase/auth";
 import Nav from "../components/nav";
-import logout from "../assets/logout.svg"
+import logout from "../assets/logout.svg";
 import { Link } from "react-router-dom";
 
-const Account = ({ user, setUser, setUserExists }) => {
+const Profilesettings = ({ user, setUser, setUserExists }) => {
   function logOut() {
     signOut(auth);
     setUser({});
     setUserExists(false);
   }
-  
-  
+
+  function deleteAccount() {
+    deleteUser(user)
+      .then(() => {
+        console.log("deleted");
+        window.location.reload();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+  console.log(user);
 
   return (
     <section id="account">
@@ -22,7 +33,7 @@ const Account = ({ user, setUser, setUserExists }) => {
         <ul className="account__lists">
           <li className="account__list">
             <Link className="account__link" to="/Account">
-              <div className="image__bg">
+              <div className="image__bg inactive">
                 <img className="account__img" src={house} alt="" />
               </div>
               <h1 className="account__para">Dashboard</h1>
@@ -30,7 +41,7 @@ const Account = ({ user, setUser, setUserExists }) => {
           </li>
           <li className="account__list">
             <Link className="account__link" to="/Profilesettings">
-              <div className="image__bg inactive">
+              <div className="image__bg ">
                 <img className="account__img" src={house} alt="" />
               </div>
               <h1 className="account__para">Profile Settings</h1>
@@ -46,12 +57,26 @@ const Account = ({ user, setUser, setUserExists }) => {
           </li>
         </ul>
         <div className="account__content--container">
-            <h1 className="content__title">Dashboard</h1>
-            <h2 className="content__greeting">Welcome back, {user.email}</h2>
+          <h1 className="content__title">Profile Settings</h1>
+          <div className="profile__settings">
+            <div className="settings__container">
+              <p className="settings__para">Email</p>
+              <p className="setting__para">{user.email}</p>
+              <p className="edit--btn__para">Edit</p>
+            </div>
+            <div className="settings__container">
+              <p className="settings__para">Password</p>
+              <p className="setting__para">* * * * * * * * * * * *</p>
+              <p className="edit--btn__para">Edit</p>
+            </div>
+          </div>
+          <p onClick={deleteAccount} className="delete__account">
+            Delete Account
+          </p>
         </div>
       </div>
     </section>
   );
 };
 
-export default Account;
+export default Profilesettings;

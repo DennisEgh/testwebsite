@@ -1,29 +1,34 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Nav from "../components/nav";
 import { auth } from "../firebase/init";
-import { signInWithEmailAndPassword} from "firebase/auth";
+import { signInWithEmailAndPassword, signInAnonymously } from "firebase/auth";
 
-const SignIn = ({user, setUser, setUserExists}) => {
+const SignIn = ({ user, setUser, setUserExists }) => {
   const [inputValuePassword, setInputValuePassword] = useState("");
   const [inputValueEmail, setInputValueEmail] = useState("");
-  
- 
-  
 
   function login() {
     signInWithEmailAndPassword(auth, inputValueEmail, inputValuePassword)
       .then(({ user }) => {
-       
         setUser(user);
         setUserExists(true);
       })
       .catch((error) => {
         console.log(error);
-      });
-    }
+        
 
-   
+      });
+  }
+
+  function anonLogIn() {
+    signInAnonymously(auth)
+      .then(() => {})
+      .catch((error) => {
+        
+      });
+  }
+
   return (
     <section id="sign-in">
       <Nav user={user} setUser={setUser} />
@@ -78,6 +83,13 @@ const SignIn = ({user, setUser, setUserExists}) => {
           <div className="button__wrapper">
             <Link className="register__link" to="/Register">
               <button className="sign-in__button create">CREATE ACCOUNT</button>
+            </Link>
+          </div>
+          <div className="button__wrapper">
+            <Link onClick={anonLogIn} className="register__link" to="">
+              <button className="sign-in__button create">
+                SIGN IN ANONYMOUSLY
+              </button>
             </Link>
           </div>
         </div>

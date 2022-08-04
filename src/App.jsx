@@ -15,6 +15,7 @@ import Account from "./pages/Account";
 import { auth } from "./firebase/init";
 import { onAuthStateChanged } from "firebase/auth";
 import Footer from "./components/Footer";
+import Profilesettings from "./pages/Profilesettings";
 
 function App() {
   const [user, setUser] = useState({});
@@ -70,6 +71,20 @@ function App() {
             element={
               userExists ? (
                 <Account
+                  user={user}
+                  setUser={setUser}
+                  setUserExists={setUserExists}
+                />
+              ) : (
+                <Navigate replace to={"/SignIn"} />
+              )
+            }
+          />
+          <Route
+            path="/Profilesettings"
+            element={
+              userExists ? (
+                <Profilesettings
                   user={user}
                   setUser={setUser}
                   setUserExists={setUserExists}
