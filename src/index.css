@@ -13,6 +13,7 @@ html {
  
 }
 
+
 .App{
   overflow: hidden;
 }
@@ -790,9 +791,7 @@ CARD
 SIGN IN
 */
 
-#sign-in {
-  height: 80vh !important;
-}
+
 
 #sign-in .nav__links {
   opacity: 0;
@@ -940,6 +939,9 @@ SIGN IN
 /*
 ACCOUNT
 */
+#account{
+  height: 88vh;
+}
 #account .modal__backdrop,
 #account .modal {
   top: 0px;
@@ -952,9 +954,7 @@ ACCOUNT
   position: relative;
   top: 200px;
 }
-#account {
-  height: calc(100vh - 95px);
-}
+
 
 #account .nav__container--upper {
   display: none;
@@ -1169,9 +1169,6 @@ MEDIA QUERY
   .facts {
     grid-template-columns: repeat(3, 1fr);
   }
-  .App section {
-    scroll-snap-align: none;
-  }
 }
 
 @media (max-width: 600px) {
@@ -1179,9 +1176,7 @@ MEDIA QUERY
  .account__lists{
   padding-top: 40px;
  }
- #account{
-  height: 650px;
- }
+ 
 
   .footer__lists {
     flex-direction: column;

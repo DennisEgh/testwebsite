@@ -13,10 +13,13 @@ const Account = ({ user, setUser, setUserExists }) => {
     setUserExists(false);
   }
   
-  
+
 
   return (
+
     <section id="account">
+        
+
       <Nav />
       <div className="account__container">
         <ul className="account__lists">
@@ -50,6 +53,7 @@ const Account = ({ user, setUser, setUserExists }) => {
             <h2 className="content__greeting">Welcome back, {user.email}</h2>
         </div>
       </div>
+        
     </section>
   );
 };

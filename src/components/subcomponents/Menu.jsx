@@ -56,7 +56,7 @@ export default function Menu() {
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="/Account" className="modal__link">
+              <Link onClick={toggleModal} to="/Account" className="modal__link">
                 <p className="modal__para">Account</p>
               </Link>
             </li>
