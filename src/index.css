@@ -942,6 +942,14 @@ SIGN IN
 /*
 ACCOUNT
 */
+#account .modal__backdrop,
+#account .modal {
+  top: 0px;
+}
+#account .fa-xmark {
+  top: 35px;
+  right: 14px;
+}
 .signout {
   position: relative;
   top: 200px;
@@ -1024,6 +1032,7 @@ ACCOUNT
 FOOTER
 */
 #footer {
+  
   height: 70px;
   width: 100%;
   padding: 0 24px;
