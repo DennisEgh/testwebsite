@@ -14,11 +14,11 @@ const Register = () => {
   let buttonsign = document.querySelector(".buttonsign");
 
   function register() {
-    spinner.classList.add("display");
-    buttonsign.classList.add("displaynone");
-
     createUserWithEmailAndPassword(auth, inputValueEmail, inputValuePassword)
-      .then((user) => {})
+      .then((user) => {
+        spinner.classList.add("display");
+        buttonsign.classList.add("displaynone");
+      })
 
       .catch((error) => {
         registerfail.classList.add("display");

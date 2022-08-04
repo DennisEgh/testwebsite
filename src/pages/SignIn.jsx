@@ -12,23 +12,21 @@ const SignIn = ({ user, setUser, setUserExists }) => {
   let loginbtn = document.querySelector(".sign-in__button");
   let spinner = document.querySelector(".spinnersignin");
   let buttonsign = document.querySelector(".buttonsign");
-  let spinneranon = document.querySelector(".spinneranon")
-  let anonbtnsign = document.querySelector(".anonbtnsign")
+  let spinneranon = document.querySelector(".spinneranon");
+  let anonbtnsign = document.querySelector(".anonbtnsign");
 
   function login() {
-    spinner.classList.add("display");
-    buttonsign.classList.add("displaynone");
-
     signInWithEmailAndPassword(auth, inputValueEmail, inputValuePassword)
       .then(({ user }) => {
         setUser(user);
         setUserExists(true);
+        spinner.classList.add("display");
+        buttonsign.classList.add("displaynone");
       })
       .catch((error) => {
         loginFail.classList.add("display");
         loginbtn.classList.add("pointernone");
-        spinner.classList.toggle("display");
-    buttonsign.classList.toggle("displaynone");
+
         setTimeout(() => {
           loginFail.classList.remove("display");
           loginbtn.classList.remove("pointernone");
@@ -37,14 +35,12 @@ const SignIn = ({ user, setUser, setUserExists }) => {
   }
 
   function anonLogIn() {
-    spinneranon.classList.add("display")
-    anonbtnsign.classList.add("displaynone")
+    spinneranon.classList.add("display");
+    anonbtnsign.classList.add("displaynone");
     signInAnonymously(auth)
-      .then(() => {
-       
-      })
+      .then(() => {})
       .catch((error) => {
-        console.log(error)
+        console.log(error);
       });
   }
 
@@ -87,7 +83,10 @@ const SignIn = ({ user, setUser, setUserExists }) => {
           </div>
           <div className="button__wrapper">
             <button onClick={login} className="sign-in__button">
-              <FontAwesomeIcon icon="fa-solid fa-spinner" className="spinnersignin" />
+              <FontAwesomeIcon
+                icon="fa-solid fa-spinner"
+                className="spinnersignin"
+              />
 
               <div className="buttonsign">Sign In</div>
             </button>
@@ -111,8 +110,11 @@ const SignIn = ({ user, setUser, setUserExists }) => {
           <div className="button__wrapper">
             <Link onClick={anonLogIn} className="register__link" to="">
               <button className="sign-in__button create">
-              <FontAwesomeIcon icon="fa-solid fa-spinner" className="spinneranon" />
-              <div className="anonbtnsign">SIGN IN ANONYMOUSLY</div>
+                <FontAwesomeIcon
+                  icon="fa-solid fa-spinner"
+                  className="spinneranon"
+                />
+                <div className="anonbtnsign">SIGN IN ANONYMOUSLY</div>
               </button>
             </Link>
           </div>
