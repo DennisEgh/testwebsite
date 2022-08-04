@@ -49,7 +49,7 @@ function App() {
             element={<Marketspecific factorynew={factorynew} />}
           />
           <Route
-            path="/Signin"
+            path="/SignIn"
             element={
               userExists ? (
                 <Navigate replace to="/Account" />
