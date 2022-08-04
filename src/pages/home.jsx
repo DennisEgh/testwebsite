@@ -15,27 +15,17 @@ export default function Home({ user, setUser }) {
 
   return (
     <>
+      <Landing user={user} setUser={setUser} />
 
+      <Secondcar />
 
-      <section>
-        <Landing user={user} setUser={setUser} />
-      </section>
-      <section>
-        <Secondcar />
-      </section>
-      <section>
-        <Thirdcar />
-      </section>
-      <section>
-        <Fourthcar />
-      </section>
-      <section>
-        <Fifthcar />
-      </section>
-      <section>
-        <Sixthcar />
-      </section>
-    
+      <Thirdcar />
+
+      <Fourthcar />
+
+      <Fifthcar />
+
+      <Sixthcar />
     </>
   );
 }
