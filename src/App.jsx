@@ -92,7 +92,7 @@ function App() {
                   setUserExists={setUserExists}
                 />
               ) : (
-                <Navigate replace to={"/SignIn"} />
+                <Navigate replace to={"/"} />
               )
             }
           />
