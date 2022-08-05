@@ -19,6 +19,7 @@ const Profilesettings = ({ user, setUser, setUserExists }) => {
     deleteUser(user)
       .then(() => {
         setUserExists(false)
+        setUser({});
         console.log("deleted");
         
       })

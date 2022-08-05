@@ -42,6 +42,7 @@ const SignIn = ({ user, setUser, setUserExists }) => {
     signInAnonymously(auth)
       .then(() => {
         setUserExists(true)
+        setUser(user)
       })
       .catch((error) => {
         console.log(error);
