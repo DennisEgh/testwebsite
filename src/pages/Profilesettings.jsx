@@ -18,8 +18,9 @@ const Profilesettings = ({ user, setUser, setUserExists }) => {
   function deleteAccount() {
     deleteUser(user)
       .then(() => {
+        setUserExists(false)
         console.log("deleted");
-        window.location.reload();
+        
       })
       .catch((error) => {
         
