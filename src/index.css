@@ -1367,3 +1367,8 @@ MEDIA QUERY
   }
  
 }
+@media (max-width: 600px){
+  .anonwrapper{
+    display: none;
+  }
+}

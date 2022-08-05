@@ -112,7 +112,7 @@ const SignIn = ({ user, setUser, setUserExists }) => {
               <button className="sign-in__button create">CREATE ACCOUNT</button>
             </Link>
           </div>
-          <div className="button__wrapper">
+          <div className="button__wrapper anonwrapper">
             <Link onClick={anonLogIn} className="register__link" to="">
               <button className="sign-in__button create">
                 <FontAwesomeIcon
