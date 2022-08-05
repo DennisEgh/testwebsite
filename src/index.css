@@ -118,6 +118,8 @@ h2 {
 .pointernone{
   pointer-events: none !important;
 }
+
+
 /*
 
 NAVBAR
@@ -255,6 +257,7 @@ LANDING
   animation-fill-mode: forwards;
   animation-delay: 1.2s;
   opacity: 0;
+  cursor: default;
 }
 
 .header__title {
@@ -263,6 +266,7 @@ LANDING
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
   opacity: 0;
+  cursor: default;
 }
 
 @keyframes fadeInAnimation {
@@ -1081,10 +1085,12 @@ ACCOUNT
   font-weight: 500;
   font-size: 34px;
   width: 240px;
+  cursor: default;
 }
 .content__greeting {
   font-weight: 400;
   letter-spacing: 2px;
+  cursor: default;
 }
 /*
 FOOTER
@@ -1132,7 +1138,7 @@ PROFILE SETTINGS
   color: #5C5E62;
   font-weight: 500;
   padding: 0;
-  
+  cursor: default;
   
 }
 .setting__para{
@@ -1141,6 +1147,7 @@ PROFILE SETTINGS
   padding: 0;
   color: #171a20;
   font-weight: 500;
+  cursor: default;
  
 }
 .edit--btn__para{
