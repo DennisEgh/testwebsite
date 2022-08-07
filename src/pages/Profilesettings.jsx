@@ -27,7 +27,9 @@ const Profilesettings = ({ user, setUser, setUserExists }) => {
         
       });
   }
-  console.log(user);
+  const alertNotImplemented = () =>{
+    alert("Not implemented yet :)")
+  }
 
   return (
     <section id="account">
@@ -65,12 +67,12 @@ const Profilesettings = ({ user, setUser, setUserExists }) => {
             <div className="settings__container">
               <p className="settings__para">Email</p>
               <p className="setting__para">{user.email || "Anonymous@email.com"}</p>
-              <p className="edit--btn__para">Edit</p>
+              <p className="edit--btn__para" onClick={alertNotImplemented}>Edit</p>
             </div>
             <div className="settings__container">
               <p className="settings__para">Password</p>
               <p className="setting__para">* * * * * * * * * * * *</p>
-              <p className="edit--btn__para">Edit</p>
+              <p className="edit--btn__para" onClick={alertNotImplemented}>Edit</p>
             </div>
           </div>
           <p onClick={deleteAccount} className="delete__account">

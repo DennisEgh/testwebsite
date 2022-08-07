@@ -14,6 +14,10 @@ export default function Menu() {
     xmark.classList.toggle("transform");
     body.classList.toggle("overflowhide");
   };
+
+  const alertNotImplemented = () =>{
+    alert("Not implemented yet :)")
+  }
   return (
     <div className="modal__container">
       <div className="modal__backdrop" onClick={toggleModal}></div>
@@ -41,17 +45,17 @@ export default function Menu() {
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="/" className="modal__link">
+              <Link to="/" className="modal__link nostock" onClick={alertNotImplemented} >
                 <p className="modal__para">8 Series</p>
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="/" className="modal__link">
+              <Link to="/" className="modal__link nostock" onClick={alertNotImplemented}>
                 <p className="modal__para">IX</p>
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="/" className="modal__link">
+              <Link to="/" className="modal__link nostock" onClick={alertNotImplemented}>
                 <p className="modal__para">I4</p>
               </Link>
             </li>
@@ -61,12 +65,12 @@ export default function Menu() {
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="" className="modal__link">
+              <Link to="" className="modal__link nostock" onClick={alertNotImplemented}>
                 <p className="modal__para">FAQ</p>
               </Link>
             </li>
             <li className="modal__list">
-              <Link to="" className="modal__link">
+              <Link to="" className="modal__link nostock" onClick={alertNotImplemented}>
                 <p className="modal__para">News</p>
               </Link>
             </li>

@@ -24,6 +24,9 @@ export default function Nav({ user, setUser }) {
     body.classList.toggle("overflowhide");
   };
 
+  const alertNotImplemented = () =>{
+    alert("Not implemented yet :)")
+  }
   return (
     <div className="navigation">
       <div className="nav__container--upper">
@@ -70,7 +73,8 @@ export default function Nav({ user, setUser }) {
             <li className="nav__list">
               <Link
                 to="/"
-                className={navbar ? "nav__link active" : "nav__link"}
+                className={navbar ? "nav__link active nostock" : "nav__link nostock "}
+                onClick={alertNotImplemented}
               >
                 8 Series
               </Link>
@@ -78,7 +82,8 @@ export default function Nav({ user, setUser }) {
             <li className="nav__list">
               <Link
                 to="/"
-                className={navbar ? "nav__link active" : "nav__link"}
+                className={navbar ? "nav__link active nostock" : "nav__link nostock"}
+                onClick={alertNotImplemented}
               >
                 IX
               </Link>
@@ -86,7 +91,8 @@ export default function Nav({ user, setUser }) {
             <li className="nav__list">
               <Link
                 to="/"
-                className={navbar ? "nav__link active" : "nav__link"}
+                className={navbar ? "nav__link active nostock" : "nav__link nostock"}
+                onClick={alertNotImplemented}
               >
                 I4
               </Link>
